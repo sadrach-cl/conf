@@ -1,0 +1,49 @@
+/*
+Catppuccin Color Scheme
+*/
+
+
+
+{
+    font-family: Cartograph CF;
+}
+
+window {
+margin: 0px;
+border: 1px solid #DDB6F2;
+background-color: #131020;
+}
+
+#input {
+margin: 5px;
+border: none;
+color: #D9E0EE;
+background-color: #575268;
+}
+
+#inner-box {
+margin: 5px;
+border: none;
+background-color: #131020;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: #131020;
+}
+
+#scroll {
+margin: 0px;
+border: none;
+}
+
+#text {
+margin: 5px;
+border: none;
+color: #D9E0EE;
+}
+
+#entry:selected {
+background-color: #1E1D2F;
+}

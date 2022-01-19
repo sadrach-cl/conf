@@ -1,0 +1,34 @@
+#border_images.focused ~/.config/sway/borders/dropShadowDark.png
+#border_images.focused_inactive ~/.config/sway/borders/dropShadowDark.png
+#border_images.unfocused ~/.config/sway/borders/dropShadowDark.png
+#border_images.urgent ~/.config/sway/borders/dropShadowDark.png
+#-----------------------border	backg	   txt	  indic	  child border
+client.focused         	#DDB6F2	#15121C	#DFDEF1 #92D2E8 #DDB6F2
+client.focused_inactive	#F5E0DC	#15121C	#DFDEF1	#92D2E8 #F5E0DC
+client.unfocused       	#C3BAC6	#15121C	#DFDEF1	#92D2E8 #1E1D2F
+client.urgent		#E38C8F	#15121C	#DFDEF1	#92D2E8 #E38C8F
+# Apply gtk theming
+#exec_always ~/.config/sway/scripts/import-gsettings
+
+# Set inner/outer gaps
+gaps inner 5
+gaps outer 5
+
+# Hide titlebar on windows:
+default_border pixel 1
+default_floating_border pixel 1
+
+# Default Font
+font pango: Cartograph CF Demi-Bold-Italic 10
+
+# Thin borders:
+smart_borders on
+
+# Set wallpaper:
+output "*" bg ~/fondo/sadppuccin.png fill
+for_window [shell="xdg_shell"] title_format "%title (%app_id)"
+for_window [shell="x_wayland"] title_format "%class - %title"
+
+bar {
+   swaybar_command waybar
+}

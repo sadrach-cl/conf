@@ -1,0 +1,6 @@
+hide_search=true
+hide_scroll=true
+show=dmenu
+width=100
+lines=4
+location=center

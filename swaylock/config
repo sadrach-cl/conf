@@ -1,0 +1,24 @@
+# indicator
+# no-unlock-indicator
+# daemonize
+indicator-caps-lock
+# datestr=%A
+image=$HOME/fondo/sadppuccin.png
+scaling=fill
+font=Cartograph CF
+font-size=20
+
+# Ring
+indicator-radius=115
+# line-uses-ring
+line-color=#B7E5E6
+text-color=#D9E0EE
+inside-color=#131020
+inside-ver-color=#A3B9EF
+line-ver-color=#A3B9EF
+ring-ver-color=#B7E5E6
+ring-color=#131020
+key-hl-color=#A3B9EF
+separator-color=#988BA2
+layout-text-color=#D9E0EE
+line-wrong-color=#E38C8F
