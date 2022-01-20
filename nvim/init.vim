@@ -11,9 +11,7 @@ Plug 'https://github.com/preservim/nerdtree'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'norcalli/nvim-colorizer.lua'
 
-
 call plug#end()
-
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 
 " Vim Script
