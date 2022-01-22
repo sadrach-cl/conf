@@ -21,7 +21,7 @@ focus_on_window_activation = "smart"
 wmname = "Sadrach"
 
 mod = "mod4"
-terminal = "alacritty"
+terminal = "kitty"
 
 ### keys ###
 keys = [
@@ -65,14 +65,14 @@ keys = [
 ### groups ###
 groups= [
     Group("1",
-          label="I",
+          label="1",
           layout="bsp",
-          matches=[Match(wm_class=["chromium"]),
+          matches=[Match(wm_class=["google-chrome"]),
                    ],
           ),
 
     Group("2",
-          label="II",
+          label="2",
           # spawn='vivaldi',
           layout="bsp",
           matches=[Match(wm_class=["Org.gnome.Nautilus"]),
@@ -82,7 +82,7 @@ groups= [
           ),
 
     Group("3",
-          label="III",
+          label="3",
           layout="bsp",
           matches=[Match(wm_class=["Terminal"]),
                    Match(wm_class=["Foot"]),
@@ -90,14 +90,14 @@ groups= [
           ),
 
     Group("4",
-          label="IV",
+          label="4",
           layout="bsp",
           matches=[Match(wm_class=["Atom"]),
                     ],
           ),
 
     Group("5",
-          label="V",
+          label="5",
           layout="bsp",
           matches=[Match(wm_class=["Telegram"]),
                    ],
@@ -117,7 +117,7 @@ for i in groups:
 # LAYOUTS
 layouts = [
     layout.Tile     (margin=8, border_width=0, border_focus="#bb94cc", border_normal="#4c566a", ratio=0.55, shift_windows=True),
-    layout.Bsp      (margin=3, border_width=1, border_focus="#bb94cc", border_normal="#4c566a", fair=False),
+    layout.Bsp      (margin=5, border_width=1, border_focus="#bb94cc", border_normal="#4c566a", fair=False),
     layout.Max(),
 ]
 
@@ -149,7 +149,7 @@ mouse = [
 
 ### Colors Scheme ###
 colors =  [
-        ["#00000000", "#00000000", "#00000000"], # color 0
+        ["#131020", "#131020", "#131020"], # color 0
         ["#181c25", "#181c25", "#181c25"], # color 1
         ["#353c49", "#353c49", "#353c49"], # color 2
         ["#aa648e", "#aa648e", "#aa648e"], # color 3
@@ -157,12 +157,12 @@ colors =  [
         ["#4e8bbc", "#4e8bbc", "#4e8bbc"], # color 5
         ["#61b1f0", "#61b1f0", "#61b1f0"], # color 6
         ["#93ff96", "#93ff96", "#93ff96"], # color 7
-        ["#f2f5de", "#f2f5de", "#f2f5de"]] # color 8
+        ["#D9E0EE", "#D9E0EE", "#D9E0EE"]] # color 8
 
 
 ### Bar ###
 widget_defaults = dict(
-    font='novamono for Powerline',
+    font='Cartograph CF',
     fontsize=12,
     padding=3,
 )
@@ -176,23 +176,23 @@ screens = [
         top=bar.Bar(
         [
 
-            widget.TextBox(
-                text="\ue0b6",
-                fonts="droid sans mono for powerline",
-                foreground=colors[3],
-                background=colors[0],
-                padding=0,
-                fontsize=18
-            ),
+            #widget.TextBox(
+            #   text="\ue0b6",
+            #   fonts="Cartograph CF",
+            #   foreground=colors[3],
+            #   background=colors[0],
+            #   padding=0,
+            #   fontsize=29
+            #   ),
             
                 
             widget.TextBox(
                 text="SadracH",
-                fonts="droid sans mono for powerline",
+                fonts="Iosevka",
                 foreground=colors[8],
                 background=colors[3],
                 padding=0,
-                fontsize=12,
+                fontsize=14,
             ),
 
             widget.TextBox(
@@ -321,10 +321,10 @@ screens = [
         ],
             20,
             background=colors[0],
-            margin=[10,10,10,5],
+            #margin=[10,10,10,5],
             #padding=8
             # margin=[4,4,6,4],
-            # opacity=0.79,
+            opacity=1,
         ),
     ),
 ]
