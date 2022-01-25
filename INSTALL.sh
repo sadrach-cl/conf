@@ -11,9 +11,9 @@ ln -s ~/conf/sway ~/.config/
 ln -s ~/conf/swaylock ~/.config/
 ln -s ~/conf/waybar ~/.config/
 ln -s ~/conf/wofi ~/.config/
-cp -R  ~/conf/themes/* ~/.themes/
-cp -R  ~/conf/icons/* ~/.icons/
-cp -R  ~/conf/fonts/* ~/.fonts/
+ln -s ~/conf/.themes ~/config/
+ln -s ~/conf/.icons ~/config/
+ln -s ~/conf/.fonts ~/config/
 chmod -R +x ~/conf/sway/scripts
 chmod -R +x ~/conf/waybar/scripts
 chmod -R +x ~/conf/scripts
