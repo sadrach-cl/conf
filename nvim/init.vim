@@ -1,6 +1,6 @@
 :set termguicolors
 :set number
-:set relativenumber
+":set relativenumber
 call plug#begin()
 
 "Plug 'nvim-lualine/lualine.nvim'
