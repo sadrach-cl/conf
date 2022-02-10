@@ -38,15 +38,15 @@ require('lualine').setup {
 -- FOR THE INDENTATION LINES
 vim.opt.listchars:append("space:⋅")
 --vim.opt.listchars:append("eol:↴")
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent4 guifg=#56B6C2 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#F28FAD gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guifg=#FAE3B0 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent3 guifg=#ABE9B3 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent4 guifg=#96CDFB gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent5 guifg=#89DCEB gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent6 guifg=#DDB6F2 gui=nocombine]]
 
 vim.cmd([[
-  hi! MatchParen cterm=NONE,bold gui=NONE,bold guibg=NONE guifg=#FFFFFF
+  hi! MatchParen cterm=NONE,bold gui=NONE,bold guibg=NONE guifg=#D9E0EE
   let g:indentLine_fileTypeExclude = ['dashboard']
 ]])
 
