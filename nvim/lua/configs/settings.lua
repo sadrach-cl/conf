@@ -1,7 +1,7 @@
--- vim.wo.number = true
+vim.wo.number = true
+vim.o.termguicolors = true
+vim.o.mouse = 'a'
 vim.cmd([[ set encoding=utf8 ]])
-vim.cmd([[ set nu! ]])
-vim.cmd([[ set mouse=a ]])
 vim.cmd([[ set wildmenu ]])
 vim.cmd([[ set confirm ]])
 vim.cmd([[ set incsearch ]])
@@ -24,6 +24,15 @@ vim.cmd([[
   augroup end
 ]])
 
-vim.cmd([[ set termguicolors ]])
 vim.cmd([[ colorscheme catppuccin ]])
+
+-- Move swapfiles and backupfiles to ~/.cache
+vim.o.directory = os.getenv('HOME') .. '/.cache/nvim'
+vim.o.backup = true
+vim.o.backupdir = os.getenv('HOME') .. '/.cache/nvim'
+
+-- Enable undo features, even after closing vim
+vim.o.undofile = true
+vim.o.undodir = os.getenv('HOME') .. '/.cache/nvim'
+vim.o.undolevels = 10000
 

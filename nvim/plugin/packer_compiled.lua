@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/sadrach/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/sadrach/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/sadrach/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -83,6 +88,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sadrach/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-scrollview"] = {
+    loaded = true,
+    path = "/home/sadrach/.local/share/nvim/site/pack/packer/start/nvim-scrollview",
+    url = "https://github.com/dstein64/nvim-scrollview"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -99,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/sadrach/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["tabline.nvim"] = {
+    loaded = true,
+    path = "/home/sadrach/.local/share/nvim/site/pack/packer/start/tabline.nvim",
+    url = "https://github.com/kdheepak/tabline.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/sadrach/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -112,5 +127,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end
