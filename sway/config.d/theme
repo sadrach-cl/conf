@@ -25,7 +25,7 @@ font pango: Cartograph CF Demi-Bold-Italic 10
 smart_borders on
 
 # Set wallpaper:
-output "*" bg ~/fondo/sadppuccin.png fill
+#output "*" bg ~/fondo/sadppuccin.png fill
 for_window [shell="xdg_shell"] title_format "%title (%app_id)"
 for_window [shell="x_wayland"] title_format "%class - %title"
 

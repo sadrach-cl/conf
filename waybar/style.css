@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-  background-color: rgba(19, 16, 32, 0);
+  background-color: rgba(30, 30, 46, 1);
   /*background-color: #181c25;*/
   /* background-color: rgba(0, 0, 0, 0); */
   /*border-bottom: 1px solid #1e222a;*/
@@ -33,16 +33,16 @@ window#waybar.hidden {
 #battery,
 #network,
 #tray {
-  background-color: #e5b4e2;
+  background-color: #1E1E2E;
   padding: 0 10px;
   margin: 2px 4px 5px 4px;
-  border: 2px solid #332E41;
-  border-radius: 90px;
+  border: 1px solid #332E41;
+  #border-radius: 90px;
   background-clip: padding-box;
 }
 
 #workspaces button {
-  background-color: #E5B4E2;
+  background-color: #1e1e2e;
   padding: 0 5px;
   min-width: 20px;
   color: #988BA2;

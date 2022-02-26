@@ -62,3 +62,9 @@ require("indent_blankline").setup {
         "IndentBlanklineIndent6",
     },
 }
+
+require('nvim-autopairs').setup({
+  enable_check_bracket_line = false
+})
+
+
