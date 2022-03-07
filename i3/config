@@ -145,9 +145,9 @@ bindsym $mod+mod1+Down resize grow height 3 px
 
 exec_always --no-startup-id picom --experimental-backends --vsync
 
-#exec /usr/lib/xfce-polkit/xfce-polkit &
+exec /usr/lib/xfce-polkit/xfce-polkit &
 
-$exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#$exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #exec_always --no-startup-id /usr/bin/xmodmap ~/.Xmodmap &
 #$exec nm-applet &
 $exec nitrogen --restore &

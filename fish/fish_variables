@@ -1,12 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
-SETUVAR _fish_abbr_lsa:colorls\x20\x2dA
-SETUVAR _fish_abbr_lsd:colorls\x20\x2d\x2dsd
-SETUVAR _fish_abbr_lsg:colorls\x20\x2dgs
-SETUVAR _fish_abbr_lss:colorls
-SETUVAR _fish_abbr_lst:colorls\x20\x2d\x2dtree
-SETUVAR _fish_abbr_ran:ranger
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7

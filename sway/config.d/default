@@ -7,7 +7,7 @@ set $mod mod4
 #set $right l
 
 set $term-float kitty
-set $menu wofi -c ~/.config/wofi/config -I
+set $menu rofi -show drun 
 set $powermenu ~/.config/waybar/scripts/power-menu.sh
 
 exec swayidle -w\
@@ -22,7 +22,7 @@ bindsym $mod+Return exec $term-float
 
 bindsym $mod+Shift+e exec $powermenu
 
-bindsym $mod+q kill
+bindsym $mod+q  kill
 
 bindsym $mod+d exec $menu
 
@@ -113,7 +113,7 @@ bindsym $mod+y exec /usr/share/sway/scripts/grimshot --notify save output
 bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
 
 
-bindsym $mod+Shift+n exec swaync-client -t -sw
- #bindsym $mod+Shift+p exec xed ~/.config/sway/cheatsheet
+#bindsym $mod+Shift+n exec swaync-client -t -sw
+#bindsym $mod+Shift+p exec xed ~/.config/sway/cheatsheet
 
- #bindsym $mod+mod1+v exec clipman pick -t wofi -c ~/.config/wofi/style.css
+#bindsym $mod+mod1+v exec clipman pick -t wofi -c ~/.config/wofi/style.css

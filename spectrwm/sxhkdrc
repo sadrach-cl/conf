@@ -1,0 +1,23 @@
+#
+# wm independent hotkeys
+#
+
+# reloads sxhkd configuration:
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# j4 dmenu
+alt + F1
+    j4-dmenu
+
+# screenshot
+Print
+    takeshot --now
+
+# screenshot active window
+ctrl + Print
+    takeshot --win
+
+# screenshot selected area
+ctrl + shift + Print
+    takeshot --area
