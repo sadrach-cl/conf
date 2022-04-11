@@ -76,4 +76,5 @@ yabai -m rule --add app="^AppCleaner$" manage=off
 yabai -m rule --add app="^Radio Silence$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Preview$" manage=off
-yabai -m rule --add app="^Finder$" space=Finder manage=off
+yabai -m rule --add app="^Finder$" space=Finder #manage=off
+yabai -m rule --add app="^Kite$" space=Git manage=off

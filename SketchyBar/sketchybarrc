@@ -16,7 +16,7 @@ sketchybar -m --default updates=when_shown                    \
                         drawing=on                            \
                         cache_scripts=on                      \
                         icon.font="SFProDisplay Nerd Font:Bold:17.0"  \
-                        icon.color=0xffC9CBFF                 \
+                        icon.color=0xffD9E0EE                 \
                         label.font="SFProDisplay Nerd Font:Bold:14.0" \
                         label.color=0xffD9E0EE
 
@@ -32,7 +32,7 @@ sketchybar -m --add space space1 left                              \
                          associated_space=1                      \
                          icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
                          icon=                                   \
-                         icon.highlight_color=0xffDDB6F2         \
+                         icon.highlight_color=0xffABE9B3         \
                          click_script="yabai -m space --focus 1" \
                          background.padding_left=0               \
                                                                  \
@@ -41,7 +41,7 @@ sketchybar -m --add space space1 left                              \
                          associated_space=2                      \
                          icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
                          icon=                                 \
-                         icon.highlight_color=0xffDDB6F2         \
+                         icon.highlight_color=0xffABE9B3         \
                          click_script="yabai -m space --focus 2" \
                                                                   \
               --add space space3 left                              \
@@ -49,7 +49,7 @@ sketchybar -m --add space space1 left                              \
                          associated_space=3                      \
                          icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
                          icon=                                   \
-                         icon.highlight_color=0xffDDB6F2         \
+                         icon.highlight_color=0xffABE9B3         \
                          click_script="yabai -m space --focus 3" \
                                                                  \
               --add space space4 left                               \
@@ -57,7 +57,7 @@ sketchybar -m --add space space1 left                              \
                          associated_space=4                      \
                          icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
                          icon=                                  \
-                         icon.highlight_color=0xffDDB6F2         \
+                         icon.highlight_color=0xffABE9B3         \
                          click_script="yabai -m space --focus 4" \
                                                                   \
               --add space space5 left                              \
@@ -65,7 +65,7 @@ sketchybar -m --add space space1 left                              \
                          associated_space=5                      \
                          icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
                          icon=漣                                   \
-                         icon.highlight_color=0xffDDB6F2         \
+                         icon.highlight_color=0xffABE9B3         \
                          click_script="yabai -m space --focus 5" \
                                                                  \
               --add space space6 left                               \
@@ -73,7 +73,7 @@ sketchybar -m --add space space1 left                              \
                          associated_space=6                      \
                          icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
                          icon=                                  \
-                         icon.highlight_color=0xffDDB6F2         \
+                         icon.highlight_color=0xffABE9B3         \
                          click_script="yabai -m space --focus 6" \ 
                                                                 \
               --add space space7 left                               \
@@ -81,7 +81,7 @@ sketchybar -m --add space space1 left                              \
                          associated_space=7                      \
                          icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
                          icon=                              \
-                         icon.highlight_color=0xffDDB6F2         \
+                         icon.highlight_color=0xffABE9B3         \
                          click_script="yabai -m space --focus 7" 
  
 
@@ -97,11 +97,11 @@ sketchybar -m --default label.padding_left=2  \
 ############## RIGHT ITEMS ############## 
 sketchybar -m --add item clock right                                                                  \
               --set clock         update_freq=10                                                      \
-                                  label.color=0xffC9CBFF                                               \
+                                  label.color=0xffD9E0EE                                               \
                                   script="~/.config/sketchybar/plugins/clock.sh"                      \
                                   icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
                                   icon=                                  \
-                                  icon.color=0xffDDB6F2         \
+                                  icon.color=0xffF5E0DC         \
                                                                     \
 
 # 
