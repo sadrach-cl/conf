@@ -21,17 +21,16 @@ focus_on_window_activation = "smart"
 wmname = "Sadrach"
 
 mod = "mod4"
-terminal = "alacritty"
+terminal = "kitty"
 
 ### keys ###
 keys = [
-    Key([mod], "d", lazy.spawn("rofi -show drun -config ~/.config/rofi/rofidmenu.rasi"), desc="spawn rofi"),
+    Key([mod], "d", lazy.spawn("rofi -show drun"), desc="spawn rofi"),
     Key([mod, "mod1"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod, "shift"], "space", lazy.layout.flip()),
-    Key([mod], "Tab", lazy.spawn("rofi -show")),
     Key([mod, "shift"], "e", lazy.spawn("./.config/rofi/powermenu.sh")),
     Key([mod], "l", lazy.spawn("./.config/scripts/i3lock-fancy/i3lock-fancy.sh")),
     Key([mod], "Left", lazy.layout.left(), desc="Move focus to left"),
@@ -65,14 +64,14 @@ keys = [
 ### groups ###
 groups= [
     Group("1",
-          label="I",
+          label="1",
           layout="bsp",
           matches=[Match(wm_class=["chromium"]),
                    ],
           ),
 
     Group("2",
-          label="II",
+          label="2",
           # spawn='vivaldi',
           layout="bsp",
           matches=[Match(wm_class=["Org.gnome.Nautilus"]),
@@ -82,7 +81,7 @@ groups= [
           ),
 
     Group("3",
-          label="III",
+          label="3",
           layout="bsp",
           matches=[Match(wm_class=["Terminal"]),
                    Match(wm_class=["Foot"]),
@@ -90,14 +89,14 @@ groups= [
           ),
 
     Group("4",
-          label="IV",
+          label="4",
           layout="bsp",
           matches=[Match(wm_class=["Atom"]),
                     ],
           ),
 
     Group("5",
-          label="V",
+          label="5",
           layout="bsp",
           matches=[Match(wm_class=["Telegram"]),
                    ],
@@ -107,7 +106,7 @@ groups= [
 
 for i in groups:
     keys.extend([
-        Key([mod], i.name, lazy.group[i.name].toscreen(),
+        Key([modr, i.name, lazy.group[i.name].toscreen(),
             desc="Switch to group {}".format(i.name)),
 
         Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
@@ -164,7 +163,7 @@ colors =  [
 widget_defaults = dict(
     font='novamono for Powerline',
     fontsize=12,
-    padding=3,
+    padding=0,
 )
 extension_defaults = widget_defaults.copy()
 
