@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Catppuccin-Frappe-Purple
+Comment=An Flat Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Catppuccin-Frappe-Purple
+MetacityTheme=Catppuccin-Frappe-Purple
+IconTheme=Tela-circle-Dark
+CursorTheme=Catppuccin-cursors
+ButtonLayout=close,minimize,maximize:menu

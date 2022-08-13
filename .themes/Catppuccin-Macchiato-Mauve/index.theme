@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Catppuccin-Macchiato-Mauve
+Comment=An Flat Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Catppuccin-Macchiato-Mauve
+MetacityTheme=Catppuccin-Macchiato-Mauve
+IconTheme=Tela-circle-Dark
+CursorTheme=Catppuccin-cursors
+ButtonLayout=close,minimize,maximize:menu
