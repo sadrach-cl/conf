@@ -7,7 +7,7 @@ set $mod mod4
 #set $right l
 
 set $term-float kitty
-set $menu rofi -show drun 
+set $menu rofi --show drun 
 set $powermenu ~/.config/waybar/scripts/power-menu.sh
 
 exec swayidle -w\

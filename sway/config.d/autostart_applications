@@ -1,6 +1,6 @@
 # Auth with polkit-gnome:
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec lxpolkit
+#exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec lxpolkit
 # Desktop notifications
 exec mako
 exec ~/.azotebg
@@ -11,7 +11,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
 
 # Sway Fader
 exec python3 ~/.config/sway/scripts/swayfader.py
-exec swaync
+#exec swaync
 #exec sworkstyle &> /tmp/sworkstyle.log
 
 exec nm-applet

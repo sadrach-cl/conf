@@ -1,34 +1,25 @@
---- ~~~~~~~~~~~~~~~~~~  @author rxyhn ~~~~~~~~~~~~~~~~~~~~~~
---- ~~~~~~~~~~~~ https://github.com/rxyhn ~~~~~~~~~~~~~~~~~~
---- ~~~~~~~~~~~~~~~~~~  @Moded sadrach ~~~~~~~~~~~~~~~~~~~~~~
---- ~~~~~~~~~~~~ https://github.com/sadrach-cl ~~~~~~~~~~~~~~~~~~
-
+-- If LuaRocks is installed, make sure that packages installed through it are
+-- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
+
+-- Standard awesome library
 local gears = require("gears")
+require("awful.autofocus")
+-- Widget and layout library
+-- Theme handling library
 local beautiful = require("beautiful")
+-- Notification library
 
---	Theme
-local theme_dir = gears.filesystem.get_configuration_dir() .. "theme/"
-beautiful.init(theme_dir .. "theme.lua")
+beautiful.init(gears.filesystem.get_configuration_dir() .. "theme/init.lua")
 
---	Configuration
-require("configuration")
+local bling = require("modules.bling")
 
---	Modules
-require("modules")
+require("error")
+require("config")
+require("binds")
+require("rules")
+require("signals")
+require("widgets")
 
---	UI
-require("ui")
 
---	Garbage
---- Enable for lower memory consumption
-collectgarbage("setpause", 110)
-collectgarbage("setstepmul", 1000)
-gears.timer({
-	timeout = 5,
-	autostart = true,
-	call_now = true,
-	callback = function()
-		collectgarbage("collect")
-	end,
-})
+require("autostart")

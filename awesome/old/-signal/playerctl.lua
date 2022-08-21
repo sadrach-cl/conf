@@ -11,7 +11,7 @@ local function new()
 	})
 end
 
-if not instance then
-	instance = new()
-end
-return instance
+--if not instance then
+--	instance = new()
+--end
+--return instance
