@@ -24,6 +24,7 @@ awful.rules.rules = {
                 "DTA", -- Firefox addon DownThemAll.
                 "copyq", -- Includes session name in class.
                 "pinentry",
+                "xfce4-clipman",
             },
             class = {
                 "Arandr",
@@ -36,6 +37,7 @@ awful.rules.rules = {
                 "Wpa_gui",
                 "veromix",
                 "xtightvncviewer",
+                "1password",
             },
 
             -- Note that the name property shown in xprop might be set slightly after creation of the client

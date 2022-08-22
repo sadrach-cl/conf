@@ -54,6 +54,9 @@ globalkeys = gears.table.join(
 		awful.spawn(terminal)
 	end, { description = "open a terminal", group = "launcher" }),
 	awful.key({ modkey, "Control" }, "r", awesome.restart, { description = "reload awesome", group = "awesome" }),
+	awful.key({ modkey, "Control" }, "v", function()
+		awful.util.spawn('bash -c "xfce4-clipman-history"')
+	end, { description = "Historial de portapapeles", group = "Clipman" }),
 
 	awful.key({ modkey }, "l", function()
 		awful.tag.incmwfact(0.05)

@@ -195,44 +195,44 @@ awful.screen.connect_for_each_screen(function(s)
 		right = 2,
 	})
 
-	-- local network = wibox.widget({
-	-- 	{
-	-- 		id = "icon",
-	-- 		align = "center",
-	-- 		valign = "center",
-	-- 		font = "Material Design Icons 20",
-	-- 		widget = wibox.widget.textbox,
-	-- 	},
-	-- 	layout = wibox.layout.align.horizontal,
-	-- })
+	local network = wibox.widget({
+		{
+			id = "icon",
+			align = "center",
+			valign = "center",
+			font = "SFProDisplay Nerd Font 16",
+			widget = wibox.widget.textbox,
+		},
+		layout = wibox.layout.align.horizontal,
+	})
 
-	-- awful.widget.watch(
-	-- 	[[sh -c "
-	-- 	nmcli g | rg -q connected
-	-- 	"]],
-	-- 	5,
-	-- 	function(_, _, _, _, code)
-	-- 		local icon
-	-- 		if code == 0 then
-	-- 			icon = "󰤨"
-	-- 		else
-	-- 			icon = "󰤭"
-	-- 		end
-	-- 		network.icon.markup = "<span foreground='" .. beautiful.blue .. "'>" .. icon .. "</span>"
-	-- 	end
-	-- )
+	awful.widget.watch(
+		[[sh -c "
+		nmcli g | rg -q connected
+		"]],
+		5,
+		function(_, _, _, _, code)
+			local icon
+			if code == 0 then
+				icon = "󰤨"
+			else
+				icon = "󰤭"
+			end
+			network.icon.markup = "<span foreground='" .. beautiful.blue .. "'>" .. icon .. "</span>"
+		end
+	)
 
-	-- local network_widget = wibox.widget({
+	local network_widget = wibox.widget({
 
-	-- 	{
-	-- 		widget = network,
-	-- 	},
-	-- 	widget = wibox.container.margin,
-	-- 	top = 7,
-	-- 	bottom = 7,
-	-- 	left = 10,
-	-- 	right = 10,
-	-- })
+		{
+			widget = network,
+		},
+		widget = wibox.container.margin,
+		top = 2,
+		bottom = 2,
+		left = 10,
+		right = 10,
+	})
 
 	-- local battery_icon = wibox.widget({
 	-- 	font = beautiful.icon_font_name .. "12",
@@ -310,45 +310,45 @@ awful.screen.connect_for_each_screen(function(s)
 	-- 	battery_widget.visible = vis
 	-- end)
 
-	-- local bright_icon = wibox.widget({
-	-- 	font = beautiful.icon_font_name .. "14",
-	-- 	align = "center",
-	-- 	valign = "center",
-	-- 	widget = wibox.widget.textbox,
-	-- })
+	local bright_icon = wibox.widget({
+		font = beautiful.icon_font_name .. "14",
+		align = "center",
+		valign = "center",
+		widget = wibox.widget.textbox,
+	})
 
-	-- local bright_widget = wibox.widget({
+	local bright_widget = wibox.widget({
 
-	-- 	{ bright_icon, right = dpi(1), widget = wibox.container.margin },
-	-- 	max_value = 100,
-	-- 	min_value = 0,
-	-- 	value = 80,
-	-- 	thickness = 2,
-	-- 	start_angle = math.pi * 3 / 2,
-	-- 	rounded_edge = true,
-	-- 	bg = beautiful.bg_focus,
-	-- 	colors = { beautiful.yellow },
-	-- 	visible = true,
-	-- 	widget = wibox.container.arcchart,
-	-- })
+		{ bright_icon, right = dpi(1), widget = wibox.container.margin },
+		max_value = 100,
+		min_value = 0,
+		value = 80,
+		thickness = 2,
+		start_angle = math.pi * 3 / 2,
+		rounded_edge = true,
+		bg = beautiful.bg_focus,
+		colors = { beautiful.yellow },
+		visible = true,
+		widget = wibox.container.arcchart,
+	})
 
-	-- awesome.connect_signal("signal::brightness", function(percentage)
-	-- 	local val = tonumber(percentage) or 0
+	awesome.connect_signal("signal::brightness", function(percentage)
+		local val = tonumber(percentage) or 0
 
-	-- 	local bri_icon = ""
+		local bri_icon = ""
 
-	-- 	if val >= 77 and val <= 100 then
-	-- 		bri_icon = ""
-	-- 	elseif val >= 20 and val < 77 then
-	-- 		bri_icon = ""
-	-- 	else
-	-- 		bri_icon = ""
-	-- 	end
+		if val >= 77 and val <= 100 then
+			bri_icon = ""
+		elseif val >= 20 and val < 77 then
+			bri_icon = ""
+		else
+			bri_icon = ""
+		end
 
-	-- 	bright_widget.value = val
-	-- 	bright_widget.visible = visible
-	-- 	bright_icon.markup = "<span foreground='" .. beautiful.yellow .. "'>" .. bri_icon .. "</span>"
-	-- end)
+		bright_widget.value = val
+		bright_widget.visible = visible
+		bright_icon.markup = "<span foreground='" .. beautiful.yellow .. "'>" .. bri_icon .. "</span>"
+	end)
 
 	-- Create the wibox
 	s.mywibox = awful.wibar({
@@ -372,7 +372,6 @@ awful.screen.connect_for_each_screen(function(s)
 		{ -- Left widgets
 			layout = wibox.layout.fixed.horizontal,
 			margin(launcher, 12, 12, 2, 2),
-			--network_widget,
 
 		},
 		{
@@ -385,7 +384,8 @@ awful.screen.connect_for_each_screen(function(s)
 			layout = wibox.layout.fixed.horizontal,
 			--battery_widget,
 			margin(volume_widget, 12, 12, 2, 2),
-			--margin(bright_widget, 12, 12, 2, 2),
+			margin(bright_widget, 12, 12, 2, 2),
+			margin(network_widget,12,12,2,2),
 			margin(clock, 12, 12, 2, 2),
 			margin(s.mylayoutbox, 2, 2, 2, 2),
 			--margin(systray, 2, 2, 2, 2),

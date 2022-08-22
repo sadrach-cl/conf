@@ -20,9 +20,9 @@ function rounded(round)
 	end
 end
 
-theme.font = "MesloLGS NF Regular"
-theme.icon_font_name = "MesloLGS NF Regular"
-theme.clock_font = "Source Han Sans JP"
+theme.font = "SFProDisplay Nerd Font"
+theme.icon_font_name = "SFProDisplay Nerd Font"
+theme.clock_font = "SFProDisplay Nerd Font"
 theme.bg_normal = "#24273a"
 theme.light = "#494d64"
 theme.overlay = "#8087a2"
@@ -69,7 +69,7 @@ theme.taglist_fg_urgent = theme.green
 theme.taglist_bg_focus = theme.bg_normal
 theme.taglist_fg_focus = theme.border_focus
 theme.taglist_fg_empty = "#939ab7"
-theme.taglist_font = "MesloLGS NF Regular"
+theme.taglist_font = "SFProDisplay Nerd Font 11"
 local taglist_square_size = dpi(0)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, theme.fg_normal)
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, theme.fg_normal)
@@ -84,7 +84,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
 
-theme.notification_font = "Roboto 15"
+theme.notification_font = "SFProDisplay Nerd Font  13"
 theme.notification_fg = theme.fg_normal
 theme.notification_bg = theme.bg_normal
 theme.notification_opacity = 1
@@ -118,7 +118,7 @@ theme.thumbnail_scale = false -- If set to true, the thumbnails fit policy will 
 theme.window_switcher_name_margins = 10 -- The margin of one clients title to the rest of the widget
 theme.window_switcher_name_valign = "center" -- How to vertically align one clients title
 theme.window_switcher_name_forced_width = 200 -- The width of one title
-theme.window_switcher_name_font = "sans 11" -- The font of all titles
+theme.window_switcher_name_font = "SFProDisplay Nerd Font  11" -- The font of all titles
 theme.window_switcher_name_normal_color = theme.fg_normal -- The color of one title if the client is unfocused
 theme.window_switcher_name_focus_color = theme.blue -- The color of one title if the client is focused
 theme.window_switcher_icon_valign = "center" -- How to vertically align the one icon
