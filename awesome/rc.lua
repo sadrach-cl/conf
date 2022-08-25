@@ -1,25 +1,37 @@
--- If LuaRocks is installed, make sure that packages installed through it are
--- found (e.g. lgi). If LuaRocks is not installed, do nothing.
+--[[
+ ______     __     __     ______     ______     ______     __    __     ______     __     __     __    __    
+/\  __ \   /\ \  _ \ \   /\  ___\   /\  ___\   /\  __ \   /\ "-./  \   /\  ___\   /\ \  _ \ \   /\ "-./  \   
+\ \  __ \  \ \ \/ ".\ \  \ \  __\   \ \___  \  \ \ \/\ \  \ \ \-./\ \  \ \  __\   \ \ \/ ".\ \  \ \ \-./\ \  
+ \ \_\ \_\  \ \__/".~\_\  \ \_____\  \/\_____\  \ \_____\  \ \_\ \ \_\  \ \_____\  \ \__/".~\_\  \ \_\ \ \_\ 
+  \/_/\/_/   \/_/   \/_/   \/_____/   \/_____/   \/_____/   \/_/  \/_/   \/_____/   \/_/   \/_/   \/_/  \/_/ 
+                                                                                                             
+  --]]
+
 pcall(require, "luarocks.loader")
 
--- Standard awesome library
-local gears = require("gears")
-require("awful.autofocus")
--- Widget and layout library
--- Theme handling library
-local beautiful = require("beautiful")
--- Notification library
+local awful = require "awful"
+local gears = require "gears"
+local beautiful = require "beautiful"
 
-beautiful.init(gears.filesystem.get_configuration_dir() .. "theme/init.lua")
+require "main.error_handling"
 
-local bling = require("modules.bling")
+beautiful.init(gears.filesystem.get_configuration_dir() .. "theme/theme.lua")
 
-require("error")
-require("config")
-require("binds")
-require("rules")
-require("signals")
-require("widgets")
+-- init config
+--require "main.wallpaper"
+require "main.layout"
+require "main.rules"
+require "main.bindings.bindings"
+require "main.bindings.custom_bindings"
+require "main.tags"
+require "main.menu"
 
+require "awful.autofocus"
 
-require("autostart")
+-- init widget
+require "misc"
+require "signals"
+
+-- Autorun at startup
+awful.spawn.with_shell("bash ~/.config/awesome/main/autorun.sh")
+--require "OLD2.autostart"

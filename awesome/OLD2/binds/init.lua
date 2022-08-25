@@ -25,9 +25,9 @@ globalkeys = gears.table.join(
 	awful.key({ modkey }, "Tab", function()
 		term_scratch:toggle()
 	end, { description = "Scratchpad", group = "client" }),
-	-- awful.key({ alt }, "Tab", function()
-	-- 	awesome.emit_signal("bling::window_switcher::turn_on")
-	-- end, { description = "Window switcher", group = "client" }),
+	awful.key({ alt }, "Tab", function()
+		awesome.emit_signal("bling::window_switcher::turn_on")
+	end, { description = "Window switcher", group = "client" }),
 	-- Layout manipulation
 	awful.key({ modkey, "Shift" }, "j", function()
 		awful.client.swap.byidx(1)
@@ -57,6 +57,10 @@ globalkeys = gears.table.join(
 	awful.key({ modkey, "Control" }, "v", function()
 		awful.util.spawn('bash -c "xfce4-clipman-history"')
 	end, { description = "Historial de portapapeles", group = "Clipman" }),
+	awful.key({ modkey }, "l", function()
+		awful.util.spawn("sync")
+        awful.util.spawn("light-locker-command -l")
+	end, { description = "LockScreen", group = "Client" }),
 
 	awful.key({ modkey }, "l", function()
 		awful.tag.incmwfact(0.05)

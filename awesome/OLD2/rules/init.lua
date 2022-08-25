@@ -25,6 +25,7 @@ awful.rules.rules = {
                 "copyq", -- Includes session name in class.
                 "pinentry",
                 "xfce4-clipman",
+                "1password",
             },
             class = {
                 "Arandr",
@@ -47,6 +48,7 @@ awful.rules.rules = {
                 -- steam
                 "Friends List",
                 "Steam - News",
+                "1password",
             },
             role = {
                 "AlarmWindow", -- Thunderbird's calendar.
