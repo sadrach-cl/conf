@@ -134,6 +134,13 @@ awful.keyboard.append_global_keybindings({
     awful.key({ modkey }, "Tab", function()
 		term_scratch:toggle()
 	end, { description = "Scratchpad", group = "client" }),
+    awful.key({ modkey }, "Tab", function()
+		awful.client.focus.history.previous()
+		if client.focus then
+			client.focus:raise()
+		end
+	end, { description = "go back", group = "client" }),
+
 
     -- awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
     --           {description = "focus the next screen", group = "screen"}),

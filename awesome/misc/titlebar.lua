@@ -18,10 +18,10 @@ local get_titlebar = function(c)
 	})
 
 	-- Titlebar's decorations
-	local left = wibox.widget {
-		awful.titlebar.widget.closebutton(c),
+	local right = wibox.widget {
 		awful.titlebar.widget.maximizedbutton(c),
 		awful.titlebar.widget.minimizebutton(c),
+		awful.titlebar.widget.closebutton(c),
 		spacing = dpi(6),
 		layout = wibox.layout.fixed.horizontal,
 	}
@@ -31,7 +31,7 @@ local get_titlebar = function(c)
 		layout = wibox.layout.fixed.horizontal,
 	}
 
-	local right = wibox.widget {
+	local left = wibox.widget {
 		buttons = buttons,
 		layout = wibox.layout.fixed.horizontal,
 	}
@@ -53,7 +53,7 @@ local get_titlebar = function(c)
 				right,
 				layout = wibox.layout.align.horizontal,
 			},
-			margins = {top = dpi(6), bottom = dpi(6), left = dpi(5), right = dpi(5)},
+			margins = {top = dpi(1), bottom = dpi(6), left = dpi(5), right = dpi(10)},
 			widget = wibox.container.margin,
 		},
 		widget = container,

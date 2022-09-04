@@ -35,8 +35,8 @@ theme.font = "SFProDisplay Nerd Font 12"
 
 ----- General/default Settings -----
 
-theme.bg_normal     = "#11111b"
-theme.bg_focus      = "#11111b"
+theme.bg_normal     = "#232634"
+theme.bg_focus      = "#232634"
 theme.bg_urgent     = "#f38ba8"
 theme.bg_minimize   = "#1e1e2e"
 theme.bg_systray    = "#1e1e2e"
@@ -46,9 +46,9 @@ theme.fg_focus      = theme.fg_normal
 theme.fg_urgent     = theme.fg_normal
 theme.fg_minimize   = theme.fg_normal
 
-theme.useless_gap         = dpi(5)
+theme.useless_gap         = dpi(10)
 theme.border_width        = dpi(0)
-
+--theme.border_color  = "#ca9ee6"
 -- Colors
 
 theme.black = "#121014"
@@ -63,8 +63,8 @@ theme.transparent = "#cdd6f409"
 
 theme.fg = "#33374c"
 
-theme.bg = "#11111b"
-theme.bg_alt = "#11111b"
+theme.bg = "#232634"
+theme.bg_alt = "#1e1e2e"
 
 -- Menu
 
@@ -77,16 +77,16 @@ theme.menu_bg_normal = theme.bg
 theme.submenu = ">"
 
 -- titlebar's buttons
-theme.titlebar_close_button_normal = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.white)
+theme.titlebar_close_button_normal = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.blue)
 theme.titlebar_close_button_focus  = gears.color.recolor_image(themes_path .. "assets/titlebar/close_2.png", theme.red)
 
-theme.titlebar_minimize_button_normal = gears.color.recolor_image(themes_path .. "assets/titlebar/minimize_1.png", theme.white)
-theme.titlebar_minimize_button_focus  = gears.color.recolor_image(themes_path .. "assets/titlebar/minimize_2.png", theme.green)
+theme.titlebar_minimize_button_normal = gears.color.recolor_image(themes_path .. "assets/titlebar/minimize_1.png", theme.blue)
+theme.titlebar_minimize_button_focus  = gears.color.recolor_image(themes_path .. "assets/titlebar/minimize_2.png", theme.yellow)
 
-theme.titlebar_maximized_button_normal_inactive = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.white)
-theme.titlebar_maximized_button_focus_inactive  = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.yellow)
-theme.titlebar_maximized_button_normal_active = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.white)
-theme.titlebar_maximized_button_focus_active  = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.yellow)
+theme.titlebar_maximized_button_normal_inactive = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.blue)
+theme.titlebar_maximized_button_focus_inactive  = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.green)
+theme.titlebar_maximized_button_normal_active = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.blue)
+theme.titlebar_maximized_button_focus_active  = gears.color.recolor_image(themes_path .. "assets/titlebar/close_1.png", theme.green)
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."layouts/fairhw.png"
