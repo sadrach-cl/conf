@@ -1,0 +1,214 @@
+set $mod Mod4
+set $exec exec --no-startup-id
+
+font pango:Cartograph CF Regular 10
+floating_modifier $mod
+
+gaps inner 5
+gaps outer 5
+#smart_gaps on
+smart_borders on
+
+bindsym $mod+Return exec kitty
+bindsym $mod+space exec dmenu_run
+bindsym $mod+l exec ~/.config/scripts/i3lock-fancy/i3lock-fancy.sh
+
+bindsym $mod+d $exec rofi -show drun
+bindsym $mod+Tab $exec rofi -show window 
+
+bindsym XF86LaunchB exec ~/.config/rofi/bin/launcher_misc
+
+bindsym $mod+Print exec ~/conf/scripts/screenshot.sh 
+
+bindsym $mod+q kill
+bindsym $mod+mod1+r restart
+bindsym $mod+mod1+p $exec pkill picom
+
+bindsym $mod+Shift+e exec exec ~/.config/i3/scripts/powermenu
+
+bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+
+bindsym XF86KbdBrightnessUp exec brightnessctl -d smc::kbd_backlight -c leds set +5%
+bindsym XF86KbdBrightnessDown exec brightnessctl -d smc::kbd_backlight -c leds set 5%-
+
+bindsym XF86AudioPlay        $exec playerctl play-pause
+bindsym XF86AudioNext        $exec playerctl next
+bindsym XF86AudioPrev        $exec playerctl previous
+bindsym XF86AudioStop        $exec playerctl stop
+bindsym XF86AudioMute        $exec pamixer -t
+bindsym XF86AudioRaiseVolume $exec pamixer -i 2
+bindsym XF86AudioLowerVolume $exec pamixer -d 2
+
+###########################################
+# spaces
+###########################################
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+assign [class="Google Chrome"] $ws1
+assign [class="Firefox"] $ws1
+assign [class="Vivaldi"] $ws1
+assign [class="PCManFM"] $ws2
+assign [class="ranger"] $ws3
+assign [class="Pamac-manager"] $ws4
+assign [class="notion-app-enhanced"] $ws5
+assign [class="Telegram"] $ws6
+
+#############################################
+# Windows
+#############################################
+
+for_window [class="Yad" instance="yad"] floating enable
+for_window [class="Galculator" instance="galculator"] floating enable
+for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="Nitrogen"] floating enable move position center
+for_window [class="feh"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+
+for_window [class="Xsane" instance="xsane"] floating enable
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable move position center
+for_window [class="qt5ct" instance="qt5ct"] floating enable
+for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
+for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
+for_window [class="Pamac-manager"] floating enable
+
+default_border pixel 0
+default_floating_border pixel 1
+floating_maximum_size 1200 x 620
+floating_minimum_size -1 x -1
+
+bindsym $mod+Down focus down
+bindsym $mod+Left focus left
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+bindsym $mod+Shift+b split h
+bindsym $mod+b split v
+
+bindsym $mod+Shift+f fullscreen toggle
+
+bindsym $mod+Shift+period floating toggle
+bindsym $mod+period focus mode_toggle
+
+bindsym $mod+minus move scratchpad; exec notify-send 'Scratchpad switch'
+bindsym $mod+Shift+minus scratchpad show; exec notify-send 'Scratchpad On'
+
+bindsym $mod+mod1+Right resize grow width 3 px
+bindsym $mod+mod1+Left resize shrink width 3 px
+bindsym $mod+mod1+Up resize shrink height 3 px
+bindsym $mod+mod1+Down resize grow height 3 px
+
+#############################################
+# autostart applications/services on login: #
+#############################################
+
+exec_always --no-startup-id picom --experimental-backends --vsync
+
+exec /usr/lib/xfce-polkit/xfce-polkit &
+
+#$exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#exec_always --no-startup-id /usr/bin/xmodmap ~/.Xmodmap &
+#$exec nm-applet &
+$exec nitrogen --restore &
+#$exec copyq &
+$exec dbus-launch dunst --config ~/.config/dunst/dunstrc &
+exec_always --no-startup-id ~/.config/i3/scripts/fix_xcursor &
+$exec xautolock -time 5 -locker ~/.config/i3/scripts/blur-lock.sh
+
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+exec --no-startup-id setxkbmap us,es -option 'grp:alt_shift_toggle'
+
+
+$exec ~/.config/polybar/launch.sh &
+#$exec ~/.config/polybar/shapes/scripts/pywal.sh /home/sadrach/wall/w3.jpg
+
+
+######################################
+# color settings for bar and windows #
+######################################
+
+# Define colors variables:
+set $darkbluetrans	#1B1923 
+set $darkblue		#1B1923
+set $lightblue		#5294e2
+set $urgentred		#e53935
+set $white		#DADAE8
+set $black		#1B1923
+set $purple		#C6AAE8
+set $darkgrey		#1B1923
+set $grey		#b0b5bd
+set $mediumgrey		#8b8b8b
+set $yellowbrown	#e1b700
+
+# define colors for windows:
+#class		        			border			bground			text		indicator	child_border
+client.focused		    	$lightblue	$darkblue		$white	$purple		$mediumgrey
+client.unfocused	    	$darkblue		$darkblue		$grey		$purple		$darkgrey
+client.focused_inactive	$darkblue		$darkblue		$grey		$purple		$black
+client.urgent		    		$urgentred	$urgentred	$white	$purple		$yellowbrown
+
+
+############################################
+# bar settings (input comes from i3blocks) #
+############################################
+
+#bar {
+#		font pango:Cartograph CF Regular 10, FontAwesome 10
+#		status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#	    	position top
+#
+#		    colors {
+#		    separator       $purple
+#		    background      $darkgrey
+#		    statusline      $white
+
+
+#                       border 		    bg					txt				indicator
+#		focused_workspace		$mediumgrey	  $grey				$darkgrey	$purple
+#		active_workspace		$lightblue    $mediumgrey	$darkgrey	$purple
+#		inactive_workspace	$darkgrey   	$darkgrey		$grey			$purple
+#		urgent_workspace		$urgentred	  $urgentred	$white		$purple
+#	}
+#}

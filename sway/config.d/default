@@ -1,0 +1,119 @@
+set $mod mod4
+
+# Home row direction keys, like vim
+#set $left h
+#set $down j
+#set $up k
+#set $right l
+
+set $term-float kitty
+set $menu rofi --show drun 
+set $powermenu ~/.config/waybar/scripts/power-menu.sh
+
+exec swayidle -w\
+    timeout 1070 'swaylock -f -C ~/.config/swaylock/config'\
+    timeout 770 'swaymsg "output * dpms off"' \
+    resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock -C ~/.config/swaylock/config'
+
+ bindsym $mod+l exec swaylock -f -C ~/.config/swaylock/config
+
+bindsym $mod+Return exec $term-float
+
+bindsym $mod+Shift+e exec $powermenu
+
+bindsym $mod+q  kill
+
+bindsym $mod+d exec $menu
+
+bindsym $mod+p exec ~/.config/wofi/windows.py
+
+floating_modifier $mod normal
+
+bindsym $mod+mod1+r reload
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+bindsym $mod+h splith
+bindsym $mod+b splitv
+
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+bindsym $mod+m fullscreen
+
+bindsym $mod+Shift+space floating toggle
+
+bindsym $mod+space focus mode_toggle
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+bindsym $mod+mod1+Right resize shrink width 10px
+bindsym $mod+mod1+Down resize grow height 10px
+bindsym $mod+mod1+Up resize shrink height 10px
+bindsym $mod+mod1+Left resize grow width 10px
+
+# Resize floating windows with mouse scroll:
+bindsym --whole-window --border $mod+button4 resize shrink height 5 px or 5 ppt
+bindsym --whole-window --border $mod+button5 resize grow height 5 px or 5 ppt
+bindsym --whole-window --border $mod+shift+button4 resize shrink width 5 px or 5 ppt
+bindsym --whole-window --border $mod+shift+button5 resize grow width 5 px or 5 ppt
+
+bindsym --locked XF86AudioRaiseVolume exec pamixer -ui 2
+bindsym --locked XF86AudioLowerVolume exec pamixer -ud 2
+bindsym --locked XF86AudioMute exec pamixer -t
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+bindsym XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+
+bindsym XF86KbdBrightnessUp exec brightnessctl -d smc::kbd_backlight -c leds set +5%
+bindsym XF86KbdBrightnessDown exec brightnessctl -d smc::kbd_backlight -c leds set 5%-
+
+bindsym $mod+n exec nautilus
+bindsym $mod+o exec google-chrome
+
+bindsym print exec /usr/share/sway/scripts/grimshot --notify save output
+bindsym $mod+y exec /usr/share/sway/scripts/grimshot --notify save output
+bindsym Shift+print exec ~/.config/sway/scripts/screenshot.sh
+
+
+#bindsym $mod+Shift+n exec swaync-client -t -sw
+#bindsym $mod+Shift+p exec xed ~/.config/sway/cheatsheet
+
+#bindsym $mod+mod1+v exec clipman pick -t wofi -c ~/.config/wofi/style.css

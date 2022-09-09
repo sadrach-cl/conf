@@ -1,0 +1,16 @@
+
+#       Bar settings
+ source  ~/.config/SketchyBar/style/bar.sh 
+#       Color Settings
+ source  ~/.config/SketchyBar/style/frappe.sh 
+#       Plugins loaded
+source  ~/.config/SketchyBar/plugins/separatorL.sh
+source  ~/.config/SketchyBar/plugins/spaces.sh
+source  ~/.config/SketchyBar/plugins/clock.sh
+source  ~/.config/SketchyBar/plugins/separator.sh
+
+
+
+sketchybar -m --update
+
+echo "sketchybar configuration loaded.."
