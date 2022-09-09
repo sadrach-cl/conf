@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sketchybar   --add item       separatorL center                          \
+sketchybar   --add item       separatorL center                         \
              --set separatorL  icon=                                \
                                icon.font="$FONT_ICON:Regular:30"    \
                               background.padding_left=-1              \

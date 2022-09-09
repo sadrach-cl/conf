@@ -14,7 +14,7 @@ sketchybar --bar     height=26                                        \
                      topmost=on                                         \
                      sticky=on                                           \
                      font_smoothing=off                                  \
-                     y_offset=-2                                        \
+                     y_offset=-2                                         \
                      shadow=$CRUST                                     \
                                                                          \
  

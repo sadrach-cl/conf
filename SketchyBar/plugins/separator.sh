@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
  source  ~/.config/SketchyBar/style/frappe.sh 
 
-sketchybar   --add item       separator center                          \
+sketchybar   --add item       separator center                         \
              --set separator  icon=                                \
                                icon.font="$FONT_ICON:Regular:30"    \
                               background.padding_left=0              \

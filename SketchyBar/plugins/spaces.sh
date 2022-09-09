@@ -10,7 +10,7 @@ do
              --set space.$sid associated_space=$sid              \
                               icon=${SPACE_ICONS[i]}             \
                               icon.font="$FONT_LABEL:Demi Bold Italic:14" \
-                              icon.color=$BASE \
+                              icon.color=$BASE  \
                               icon.background=$BG  \
                               icon.padding_right=10               \
                               icon.padding_right=10              \

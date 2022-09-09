@@ -13,7 +13,7 @@ sketchybar -m --add item clock center                                           
                                   icon=                                \
                                   icon.padding_left= 10 \
                                   icon.padding_right= 10 \
-                                  icon.color=$MAUVE        \
+                                  icon.color=$MAUVE         \
                                   background.color=$BG        \
                                                                     
 
