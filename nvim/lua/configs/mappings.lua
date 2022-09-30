@@ -10,6 +10,7 @@ vim.cmd([[ map <C-a> ggVG ]])
 
 -- guardar
 vim.cmd([[ map <C-s> :w<CR> ]])
+vim.cmd([[ map <C-z> :u<CR>]])
 
 -- Copiar visual-normal
 vim.cmd([[ map vnoremap <leader>y "+y ]])

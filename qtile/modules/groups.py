@@ -1,30 +1,26 @@
-from libqtile.config import Key, Group
+from libqtile.config import Key, Group, DropDown, ScratchPad
 from libqtile.lazy import lazy
-from .keys import keys, mod
+from .keys import keys, mod, terminal
 
-groups = [Group(i) for i in "123456789"]
+# GROUPS
+groups = (
+    Group(' WWW', layout='monadtall'),
+    Group(' DEV', layout='monadtall'),
+    Group(' SYS', layout='monadtall'),
+    Group(' VRT', layout='monadtall'),
+    Group(' MUS', layout='monadtall'),
+    Group(' VID', layout='monadtall'),
+    Group(' FUN', layout='monadtall'),
+    Group(' MSG', layout='monadtall'),
+    ScratchPad('scratchpad', [DropDown(
+        'term', terminal, width=0.5, height=0.5,
+        x=0.05, y=0.05, opacity=1.0, on_focus_lost_hide=False
+    )])
+)
 
-for i in groups:
-    keys.extend([
-        # mod1 + letter of group = switch to group
-        Key([mod],
-            i.name,
-            lazy.group[i.name].toscreen(),
-            desc="Switch to group {}".format(i.name)),
+for i, group in enumerate(groups[:-1], 1):
+    # Switch to another group
+    keys.append(Key([mod], str(i), lazy.group[group.name].toscreen()))
+    # Send current window to another group
+    keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(group.name)))
 
-        Key([mod], "Right", lazy.screen.next_group(),
-            desc="Switch to next group"),
-
-        Key([mod], "Left", lazy.screen.prev_group(),
-            desc="Switch to previous group"),
-
-        # mod1 + shift + letter of group = switch to & move focused window to group
-        Key([mod, "shift"],
-            i.name,
-            lazy.window.togroup(i.name, switch_group=True),
-            desc="Switch to & move focused window to group {}".format(i.name)),
-        # Or, use below if you prefer not to switch to that group.
-        # # mod1 + shift + letter of group = move focused window to group
-        # Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-        #     desc="move focused window to group {}".format(i.name)),
-    ])
