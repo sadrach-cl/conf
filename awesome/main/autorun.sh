@@ -6,7 +6,7 @@ for _prs in "${_ps[@]}"; do
 		killall -9 ${_prs}
 	fi
 done
-
+xset led 3 &
 /usr/lib/xfce-polkit/xfce-polkit &
 #/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 picom --config $HOME/.config/awesome/picom/picom.conf --experimental-backends &
