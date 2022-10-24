@@ -1,9 +1,4 @@
-
-cmd - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d ~
-cmd - m : open -na /Applications/mpv.app $(pbpaste)
-
-# close focused window
-alt - w : chunkc tiling::window --close
+# cmd + shift - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d  
 
 # change focus
 alt - h : yabai -m window --focus west
@@ -11,10 +6,10 @@ alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
 # (alt) change focus (using arrow keys)
-alt - left  : yabai -m window --focus west
-alt - down  : yabai -m window --focus south
-alt - up    : yabai -m window --focus north
-alt - right : yabai -m window --focus east
+cmd - left  : yabai -m window --focus west
+cmd - down  : yabai -m window --focus south
+cmd - up    : yabai -m window --focus north
+cmd - right : yabai -m window --focus east
 
 # move  window in current workspace
 alt + shift - h : yabai -m window --swap west || $(yabai -m window --display west; yabai -m display --focus west)
@@ -48,9 +43,8 @@ shift + cmd - 6 : yabai -m window --space 6; yabai -m space --focus 6
 shift + cmd - 7 : yabai -m window --space 7; yabai -m space --focus 7
 
 # float / unfloat window and center on screen
-alt + cmd - f : yabai -m window --toggle float
-shift + alt + cmd - f : yabai -m window --toggle float;\
-           yabai -m window --grid 4:4:1:1:2:2
+# alt + cmd - f : yabai -m window --toggle float
+alt + cmd - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # toggle window zoom
 alt + cmd - m : yabai -m window --toggle zoom-fullscreen
@@ -59,3 +53,5 @@ alt + cmd - m : yabai -m window --toggle zoom-fullscreen
 alt + cmd - q : brew services restart yabai
 alt + cmd + shift - q : osascript -e 'tell app "System Events" to log out'
 alt + cmd - r : brew services restart sketchybar
+
+cmd - e : open ~/

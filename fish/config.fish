@@ -2,7 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 starship init fish | source
 set -x VISUAL nvim
-set -x EDITOR nvim# alias -s ins="yay -S"
 # alias -s v="nvim -i NONE"
 # alias -s del="yay -R"
 # alias -s gcom="git commit -m"
@@ -21,3 +20,6 @@ set -x EDITOR nvim# alias -s ins="yay -S"
 # alias -s gl="git log"
 # alias -s glg="git log --color --graph --pretty --oneline"
 end
+
+
+set PATH /opt/homebrew/bin $PATH

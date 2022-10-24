@@ -1,17 +1,13 @@
 format = """
-[](#9A348E)\
+[](#232634)\
 $username\
-[](bg:#DA627D fg:#9A348E)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
 $nodejs\
 $rust\
-[](fg:#86BBD8 bg:#33658A)\
 $time\
-[ ](fg:#33658A)\
+[ ](fg:#232634)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -20,12 +16,12 @@ $time\
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
+style_user = "fg:#c6d0f5 bg:#232634"
+style_root = "bg:#232634 fg:#e78284"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#DA627D"
+style = "fg:#c6d0f5 bg:#232634"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -45,25 +41,25 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
-format = '[[ $symbol $branch ](bg:#FCA17D)]($style)'
+style = "fg:#e5c890 bg:#232634"
+format = '[[ $symbol $branch ](fg:#e5c890 bg:#232634)]($style)'
 
 [git_status]
-style = "bg:#FCA17D"
-format = '[[($all_status$ahead_behind )](bg:#FCA17D)]($style)'
+style = "fg:#e5c890 bg:#232634"
+format = '[[($all_status$ahead_behind )](fg:#e5c890 bg:#232634)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#86BBD8"
-format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+style = "bg:#232634 fg:#85c1dc"
+format = '[[ $symbol ($version) ](fg:#85c1dc bg:#232634)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#86BBD8"
-format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+style = "bg:#232634 fg:#85c1dc"
+format = '[[ $symbol ($version) ](fg:#85c1dc bg:#232634)]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
-format = '[[ ♥ $time ](bg:#33658A)]($style)'
+style = "bg:#232634 fg:#f4b8e4"
+format = '[[ ♥ $time ](bg:#232634 fg:#e78284)]($style)'
