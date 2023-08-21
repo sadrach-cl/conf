@@ -1,4 +1,5 @@
-# cmd + shift - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d  
+
+#alt + shift - return : /Applications/kitty.app/Contents/MacOS/kitty --single-instance -d  
 
 # change focus
 alt - h : yabai -m window --focus west
@@ -50,8 +51,8 @@ alt + cmd - f : yabai -m window --toggle float --grid 4:4:1:1:2:2
 alt + cmd - m : yabai -m window --toggle zoom-fullscreen
 
 # Restart Yabai
-alt + cmd - q : brew services restart yabai
+shift + cmd - y : yabai --restart-services
 alt + cmd + shift - q : osascript -e 'tell app "System Events" to log out'
-alt + cmd - r : brew services restart sketchybar
+alt + cmd - r : brew services restart setchybar
 
 cmd - e : open ~/

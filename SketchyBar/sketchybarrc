@@ -1,120 +1,87 @@
-# This is a demo config to bring across some of the most important commands more easily.
-# For a more advanced configuration example see https://github.com/FelixKratz/SketchyBar/discussions/47#discussion-3587958
-############## BAR ############## 
-sketchybar -m --bar height=25        \
-                    margin=0   \
-                    position=top     \
-                    padding_left=7  \
-                    padding_right=7 \
-                    y_offset=0 \
-                    corner_radius=0 \
-                    blur_radius=0   \
-                    color=0xff1e1e2e
+#!/bin/bash
 
-############## GLOBAL DEFAULTS ############## 
-sketchybar -m --default updates=when_shown                    \
-                        drawing=on                            \
-                        cache_scripts=on                      \
-                        icon.font="SFProDisplay Nerd Font:Bold:17.0"  \
-                        icon.color=0xffD9E0EE                 \
-                        label.font="SFProDisplay Nerd Font:Bold:14.0" \
-                        label.color=0xffD9E0EE
+source "$CONFIG_DIR/colors.sh" # Loads all defined colors
+source "$CONFIG_DIR/icons.sh"  # Loads all defined icons
 
-############## SPACE DEFAULTS ############## 
-sketchybar -m --default label.padding_left=2  \
-                        label.padding_right=2 \
-                        icon.padding_left=8   \
-                        label.padding_right=8
+ITEM_DIR="$CONFIG_DIR/items"     # Directory where the items are configured
+PLUGIN_DIR="$CONFIG_DIR/plugins" # Directory where all the plugin scripts are stored
 
-############## PRIMARY DISPLAY SPACES ############## 
-sketchybar -m --add space space1 left                              \
-              --set space1 associated_display=1                    \
-                         associated_space=1                      \
-                         icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
-                         icon=                                   \
-                         icon.highlight_color=0xffABE9B3         \
-                         click_script="yabai -m space --focus 1" \
-                         background.padding_left=0               \
-                                                                 \
-              --add space space2 left                               \
-              --set space2  associated_display=1                    \
-                         associated_space=2                      \
-                         icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
-                         icon=                                 \
-                         icon.highlight_color=0xffABE9B3         \
-                         click_script="yabai -m space --focus 2" \
-                                                                  \
-              --add space space3 left                              \
-              --set space3 associated_display=1                    \
-                         associated_space=3                      \
-                         icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
-                         icon=                                   \
-                         icon.highlight_color=0xffABE9B3         \
-                         click_script="yabai -m space --focus 3" \
-                                                                 \
-              --add space space4 left                               \
-              --set space4  associated_display=1                    \
-                         associated_space=4                      \
-                         icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
-                         icon=                                  \
-                         icon.highlight_color=0xffABE9B3         \
-                         click_script="yabai -m space --focus 4" \
-                                                                  \
-              --add space space5 left                              \
-              --set space5 associated_display=1                    \
-                         associated_space=5                      \
-                         icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
-                         icon=漣                                   \
-                         icon.highlight_color=0xffABE9B3         \
-                         click_script="yabai -m space --focus 5" \
-                                                                 \
-              --add space space6 left                               \
-              --set space6  associated_display=1                    \
-                         associated_space=6                      \
-                         icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
-                         icon=                                  \
-                         icon.highlight_color=0xffABE9B3         \
-                         click_script="yabai -m space --focus 6" \ 
-                                                                \
-              --add space space7 left                               \
-              --set space7  associated_display=1                    \
-                         associated_space=7                      \
-                         icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
-                         icon=                              \
-                         icon.highlight_color=0xffABE9B3         \
-                         click_script="yabai -m space --focus 7" 
- 
+FONT="DFVN MBF Space Habitat" # Needs to have Regular, Bold, Semibold, Heavy and Black variants
+PADDINGS=3                    # All paddings use this value (icon, label, background)
 
-############## ITEM DEFAULTS ###############
-sketchybar -m --default label.padding_left=2  \
-                        icon.padding_right=2  \
-                        icon.padding_left=6   \
-                        label.padding_right=6
+# Setting up and starting the helper process
+HELPER=git.felix.helper
+killall helper
+(cd $CONFIG_DIR/helper && make)
+$CONFIG_DIR/helper/helper $HELPER >/dev/null 2>&1 &
 
+# Unload the macOS on screen indicator overlay for volume change
+launchctl unload -F /System/Library/LaunchAgents/com.apple.OSDUIHelper.plist >/dev/null 2>&1 &
 
-############## LEFT ITEMS ############## 
-# 
-############## RIGHT ITEMS ############## 
-sketchybar -m --add item clock right                                                                  \
-              --set clock         update_freq=10                                                      \
-                                  label.color=0xffD9E0EE                                               \
-                                  script="~/.config/sketchybar/plugins/clock.sh"                      \
-                                  icon.font="SFProDisplay Nerd Font:Regular:14.0"    \
-                                  icon=                                  \
-                                  icon.color=0xffF5E0DC         \
-                                                                    \
+# Setting up the general bar appearance of the bar
+bar=(
+	height=35
+	color=$BAR_COLOR
+	border_width=0
+	border_color=$BAR_BORDER_COLOR
+	shadow=on
+	position=top
+	sticky=on
+	padding_right=10
+	padding_left=10
+	y_offset=-5
+	margin=-2
+	topmost=window
+)
 
-# 
-# ###################### CENTER ITEMS ###################
-# 
-# Adding custom events which can listen on distributed notifications from other running processes
-# sketchybar -m --add event spotify_change "com.spotify.client.PlaybackStateChanged"                       \
-#               --add item spotifyIndicator center                                                         \
-#               --set spotifyIndicator script="~/.config/sketchybar/plugins/spotifyIndicator.sh"           \
-#               --set spotifyIndicator click_script="osascript -e 'tell application \"Spotify\" to pause'" \
-#               --subscribe spotifyIndicator spotify_change
-# 
-############## FINALIZING THE SETUP ##############
-sketchybar -m --update
+sketchybar --bar "${bar[@]}"
 
-echo "sketchybar configuration loaded.."
+# Setting up default values
+defaults=(
+	updates=when_shown
+	icon.font="$FONT:Bold:14.0"
+	icon.color=$ICON_COLOR
+	icon.padding_left=$PADDINGS
+	icon.padding_right=$PADDINGS
+	label.font="$FONT:Semibold:13.0"
+	label.color=$LABEL_COLOR
+	label.padding_left=$PADDINGS
+	label.padding_right=$PADDINGS
+	padding_right=$PADDINGS
+	padding_left=$PADDINGS
+	background.height=26
+	background.corner_radius=9
+	background.border_width=2
+	popup.background.border_width=2
+	popup.background.corner_radius=9
+	popup.background.border_color=$POPUP_BORDER_COLOR
+	popup.background.color=$POPUP_BACKGROUND_COLOR
+	popup.blur_radius=20
+	popup.background.shadow.drawing=on
+)
+
+sketchybar --default "${defaults[@]}"
+
+# Left
+# source "$ITEM_DIR/apple.sh"
+source "$ITEM_DIR/spaces.sh"
+# source "$ITEM_DIR/yabai.sh"
+source "$ITEM_DIR/front_app.sh"
+
+# Center
+# source "$ITEM_DIR/spotify.sh"
+source "$ITEM_DIR/calendar.sh"
+
+# Right
+# source "$ITEM_DIR/calendar.sh"
+# source "$ITEM_DIR/brew.sh"
+source "$ITEM_DIR/wifi.sh"
+# source "$ITEM_DIR/github.sh"
+source "$ITEM_DIR/battery.sh"
+source "$ITEM_DIR/volume.sh"
+#source "$ITEM_DIR/cpu.sh"
+
+# Forcing all item scripts to run (never do this outside of sketchybarrc)
+sketchybar --update
+
+echo "sketchybar configuation loaded.."
