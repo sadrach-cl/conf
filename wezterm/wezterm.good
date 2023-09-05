@@ -1,0 +1,26 @@
+local wezterm = require("wezterm")
+
+function scheme_for_appearance(appearance)
+	if appearance:find("Dark") then
+		return "Catppuccin Macchiato"
+	else
+		return "Catppuccin Latte"
+	end
+end
+
+return {
+	font = wezterm.font("SFMono Nerd Font Mono"),
+	font_size = 12.0,
+	-- color_scheme = "Catppuccin Macchiato",
+	color_scheme = scheme_for_appearance(wezterm.gui.get_appearance()),
+	enable_tab_bar = true,
+	tab_bar_at_bottom = true,
+	window_decorations = "NONE",
+	window_background_opacity = 0.85,
+	cursor_blink_ease_in = "Linear",
+	enable_wayland = true,
+	-- Spawn a zsh shell in login mode
+	default_prog = { "/usr/bin/zsh", "-l" },
+
+	-- default_prog = { "zellij" },
+}

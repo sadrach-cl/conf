@@ -1,7 +1,17 @@
 font=UbuntuMono 12.5
 
-background-color=#131020
-text-color=#D9E0EE
+# Colors
+
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+progress-color=over #313244
+
+[urgency=high]
+border-color=#fab387
+
+ignore-timeout=1
+#########
 width=315
 height=200
 padding=10
@@ -12,12 +22,9 @@ max-icon-size=50
 layer=overlay
 
 border-size=1
-border-radius=0
-border-color=#DDB6F2
+border-radius=14
 
 default-timeout=5000
 
-[urgency=high]
 
-ignore-timeout=1
 

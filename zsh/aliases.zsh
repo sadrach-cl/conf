@@ -1,3 +1,10 @@
+# DNF Fedora
+alias dnfi="sudo dnf install"
+alias dnfu="sudo dnf update"
+
+#Nvim
+alias v="nvim"
+
 # Aliases for common dirs
 alias home="cd ~"
 

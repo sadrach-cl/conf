@@ -1,12 +1,21 @@
 {
 //  "gtk-layer-shell": false,
   "height": 37, // Waybar height (to be removed for auto height)
-  "modules-left": ["wlr/workspaces"],
-  "modules-center": [],
-  "modules-right": ["idle_inhibitor", "pulseaudio", "backlight", "clock"],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["tray", "battery", "sway/language", "clock"],
 
   // Modules configuration
-  "wlr/workspaces": {
+
+  "hyprland/window": {
+      "format": "{}",
+     // "rewrite": {
+     //     "(.*) — Mozilla Firefox": "🌎 $1",
+     //     "(.*) - fish": "> [$1]"
+     // },
+     // "separate-outputs": true
+  },
+  "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "on-click": "activate",
