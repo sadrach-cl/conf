@@ -8,8 +8,8 @@ c.font = wezterm.font_with_fallback({
 	"SFMono Nerd Font Mono",
 	"Symbols Nerd Font",
 })
-c.default_prog = { "/usr/bin/zsh", "-1" }
-c.enable_wayland = true
+-- c.default_prog = { "/usr/bin/zsh", "-1" }
+-- c.enable_wayland = true
 -- window
 c.window_decorations = "RESIZE"
 c.window_padding = { left = 5, right = 3, top = 3, bottom = 3 }
