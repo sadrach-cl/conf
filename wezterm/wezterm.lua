@@ -2,7 +2,7 @@
 local wezterm = require("wezterm")
 local c = wezterm.config_builder()
 
--- require("keys").apply(c)
+require("keys").apply(c)
 
 c.font = wezterm.font_with_fallback({
 	"SFMono Nerd Font Mono",

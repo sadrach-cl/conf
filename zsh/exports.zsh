@@ -20,4 +20,4 @@ export PATH=~/.npm-global/bin:$PATH
 #eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
 export ZSH_COMPDUMP="$HOME/.config/zsh/zcom/.zcompdump"
-
+eval "$(zoxide init zsh)"
