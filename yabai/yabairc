@@ -37,7 +37,7 @@ yabai -m config normal_window_opacity 0.9
 # @REM yabai -m space 7
 
 # window rules
-yabai -m rule --add app="^Google Chrome$" sp
+yabai -m rule --add label="Google Chrome" app="^Google Chrome$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
 yabai -m rule --add label="Safari" app="^Safari$" space=1 title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
 yabai -m rule --add app="^Notes$" space=5 grid=4:4:1:1:2:2
 yabai -m rule --add app="^iTerm$" space=2

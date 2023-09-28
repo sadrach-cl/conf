@@ -17,6 +17,7 @@ plug "zap-zsh/fzf"
 plug "zap-zsh/vim"
 plug "qoomon/zsh-lazyload"
 plug "b4b4r07/emoji-cli"
+plug "Aloxaf/fzf-tab"
 
 # Load and initialise completion system
 autoload -Uz compinit
@@ -26,6 +27,3 @@ compinit
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
 plug "$HOME/.config/zsh/sketchybar.zsh"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

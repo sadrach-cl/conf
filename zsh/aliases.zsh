@@ -1,3 +1,4 @@
+alias b="bat --theme='Catppuccin-macchiato'"
 # DNF Fedora
 alias dnfi="sudo dnf install"
 alias dnfu="sudo dnf update"
@@ -5,14 +6,18 @@ alias dnfu="sudo dnf update"
 #Nvim
 alias v="nvim"
 
+#FD replace FIND
+alias find="fd"
+
 # Aliases for common dirs
-alias home="cd ~"
+alias home="z ~"
 
 # Exa codes
-alias lla="exa -la --icons"
-alias lls="exa -a --icons --color auto"
+alias la="eza -a --icons --hyperlink --group-directories-first"
+alias ls="eza -l --icons --hyperlink --group-directories-first"
+alias lsa="eza -la --icons --hyperlink --group-directories-first"
 # System Aliases
-alias ..="cd .."
+alias ..="z .."
 alias x="exit"
 
 # Git Aliases
@@ -31,6 +36,7 @@ alias g="lazygit"
 alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
+alias rmf='rm -rf'
 # easier to read disk
 alias df='df -h'     # human-readable sizes
 alias free='free -m' # show sizes in MB

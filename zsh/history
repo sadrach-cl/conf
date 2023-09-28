@@ -1,0 +1,1056 @@
+: 1694362917:0;sudo spctl --master-disable
+: 1694362917:0;sudo xcodebuild -license
+: 1694362917:0;/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+: 1694362917:0;(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/sadrach/.zprofile
+: 1694362917:0;eval "$(/opt/homebrew/bin/brew shellenv)"
+: 1694362917:0;brew install --cask kitty\
+
+: 1694362917:0;sudo /Users/sadrach/Downloads/ParallelsDesktop-18.3.2-53621/InjectLib_Crack/main.rb
+: 1694362917:0;sudo ruby /Users/sadrach/Downloads/ParallelsDesktop-18.3.2-53621/InjectLib_Crack/main.rb
+: 1694362917:0;brew install ruby
+: 1694362917:0;cd Downloads/
+: 1694362917:0;cd ParallelsDesktop-18.3.2-53621
+: 1694362917:0;cd InjectLib_Crack
+: 1694362917:0;sudo ruby main.rb
+: 1694362917:0;brew install only-switch
+: 1694362917:0;killall altstore
+: 1694362917:0;mkdir clones
+: 1694362917:0;brew install starship\
+
+: 1694362917:0;curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+: 1694362917:0;nvim .zimrc
+: 1694362917:0;cd xcode
+: 1694362917:0;nstall
+: 1694362917:0;xcode-select --install
+: 1694362917:0;mkdir emulador
+: 1694362917:0;cd emulador
+: 1694362917:0;rm -r emulador
+: 1694362917:0;brew install exa
+: 1694362917:0;exa -ls
+: 1694362917:0;exa -hla
+: 1694362917:0;exa -hl
+: 1694362917:0;exa -ha
+: 1694362917:0;brew install gping
+: 1694362917:0;brew install yabai
+: 1694362917:0;yabai start
+: 1694362917:0;brew service start yabai
+: 1694362917:0;cd ~/clones
+: 1694362917:0;git clone https://github.com/FelixKratz/dotfiles.git
+: 1694362917:0;nvim .install.sh
+: 1694362917:0;cd ~/clones/dotfiles/
+: 1694362917:0;./.install.sh
+: 1694362917:0;nvim 
+: 1694362917:0;defaults write com.apple.finder DisableAllAnimations -bool false\
+
+: 1694362917:0;defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool true
+: 1694362917:0;brew remove skhd
+: 1694362917:0;brew uninstall koekeishiya/formulae/yabai
+: 1694362917:0;brew remove koekeishiya/formulae/yabai
+: 1694362917:0;brew remove yabai
+: 1694362917:0;killall yabai
+: 1694362917:0;yabai --uninstall-service
+: 1694362917:0;sudo yabai --uninstall-sa
+: 1694362917:0;rm ~/.yabairc
+: 1694362917:0;rm /tmp/yabai_$USER.lock
+: 1694362917:0;rm /tmp/yabai_$USER.socket
+: 1694362917:0;rm /tmp/yabai-sa_$USER.socket\
+
+: 1694362917:0;nvim ~/clones/dotfiles/.install.sh
+: 1694362917:0;nvim +PackerSync
+: 1694362917:0;nvim ~/clones/dotfiles/.config/nvim/init.lua
+: 1694362917:0;nvim ~/clones/dotfiles/.config/nvim/lua/autocmds.lua
+: 1694362917:0;nvim ~/clones/dotfiles/.config/nvim/lua/options.lua
+: 1694362917:0;nvim ~/clones/dotfiles/.config/nvim/lua/plugins/catppuccin.lua
+: 1694362917:0;nvim ~/clones/dotfiles/.config/nvim/lua/plugins/init.lua
+: 1694362917:0;nvim ~/clones/dotfiles/.config/nvim/lua/mappings.lua
+: 1694362917:0;brew --help
+: 1694362917:0;brew doctor
+: 1694362917:0;brew cask koekeishiya/formulae/yabai
+: 1694362917:0;brew tap koekeishiya/formulae/yabai
+: 1694362917:0;brew services restart yabai
+: 1694362917:0;brew services start yabai
+: 1694362917:0;./.config/yabai/yabairc
+: 1694362917:0;sudo rm ~/.config/yabai
+: 1694362917:0;sudo rmdir ~/.config/yabai
+: 1694362917:0;sudo rm -R ~/.config/yabai
+: 1694362917:0;exa ~/.config/yabai
+: 1694362917:0;exa ~/.config/
+: 1694362917:0;sudo rm -R ~/.config/skhd
+: 1694362917:0;nvim ./.config/yabai/yabairc
+: 1694362917:0;brew install skhd
+: 1694362917:0;nvim ~/xcode/iCode_tvOS_App/tvOS_First_Test.xcodeproj/project.xcworkspace
+: 1694362917:0;nvim ~/xcode/iCode_tvOS_App/tvOS_First_Test.xcodeproj/project.pbxproj
+: 1694362917:0;nvim /Users/sadrach/xcode/Untitled.xcworkspace/xcuserdata/sadrach.xcuserdatad/UserInterfaceState.xcuserstate
+: 1694362917:0;nvim /Users/sadrach/xcode/Untitled.xcworkspace/contents.xcworkspacedata
+: 1694362917:0;cp /Users/sadrach/xcode/Provenance/CodeSigning.xcconfig.sample /Users/sadrach/xcode/Provenance/CodeSigning.xcconfig
+: 1694362917:0;nvim /Users/sadrach/xcode/Provenance/CodeSigning.xcconfig.sample 
+: 1694362917:0;nvim /Users/sadrach/xcode/Provenance/CodeSigning.xcconfig
+: 1694362917:0;cd /Users/sadrach/xcode/Provenance/
+: 1694362917:0;git pull --recurse-submodules -j4
+: 1694362917:0;git pull 
+: 1694362917:0;rm -r Provenance
+: 1694362917:0;sudo rm -R Provenance
+: 1694362917:0;git clone --recurse-submodules -j4 https://github.com/Provenance-Emu/Provenance.git
+: 1694362917:0;nvim ./.config/alacritty/alacritty.yml
+: 1694362917:0;pgrade
+: 1694362917:0;brew upgra
+: 1694362917:0;git clone https://github.com/catppuccin/btop.git
+: 1694362917:0;cd btop
+: 1694362917:0;brew install zathura
+: 1694362917:0;killall ForkLift
+: 1694362917:0;killall forklift
+: 1694362917:0;killall ForkLiftMini
+: 1694362917:0;sudo killall ForkLiftMini
+: 1694362917:0;nvim ./.config/skhd/skhdrc
+: 1694362917:0;brew tap majd/repo
+: 1694362917:0;brew install ipatool
+: 1694362917:0;ipatool auth
+: 1694362917:0;ipatool auth info
+: 1694362917:0;ipatool auth login
+: 1694362917:0;ipatool auth -h
+: 1694362917:0;ipatool auth 
+: 1694362917:0;ipatool auth sadrach@me.com
+: 1694362917:0;ipatool auth login sadrach@me.com
+: 1694362917:0;ipatool auth login -e sadrach@me.com
+: 1694362917:0;ipatool search movistar TV
+: 1694362917:0;ipatool search movistar tv
+: 1694362917:0;ipatool search movistar
+: 1694362917:0;ipatool --bundle-identifier com.pdi.enjoy.play --outuput ~/movistartv.ipa
+: 1694362917:0;ipatool -?
+: 1694362917:0;ipatool -help
+: 1694362917:0;ipatool 
+: 1694362917:0;ipatool download com.pdi.enjoy.play --outuput ~/movistartv.ipa
+: 1694362917:0;ipatool download com.pdi.enjoy.play 
+: 1694362917:0;ipatool download --bundle-identifier com.pdi.enjoy.play --outuput ~/movistartv.ipa
+: 1694362917:0;ipatool download --bundle-identifier com.pdi.enjoy.play 
+: 1694362917:0;nvim ~/com.pdi.enjoy.Play_821192008_22.4.101/iTunesMetadata.plist
+: 1694362917:0;brew update && upgrade 
+: 1694362917:0;brew update 
+: 1694362917:0;neofetch
+: 1694362917:0;neofetch --h
+: 1694362917:0;neofetch -h
+: 1694362917:0;neofetch -help
+: 1694362917:0;neofetch --help
+: 1694362917:0;neofetch --caca source
+: 1694362917:0;cd dotfiles
+: 1694362917:0;nvim .zshrc
+: 1694362917:0;exa -s
+: 1694362917:0;exa --h
+: 1694362917:0;exa 
+: 1694362917:0;brew uninstall zimfw
+: 1694362917:0;brew uninstall zim
+: 1694362917:0;brew uninstall zimzsh
+: 1694362917:0;znap install
+: 1694362917:0;brew install fish
+: 1694362917:0;zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+: 1694362917:0;ls -l
+: 1694362917:0;zap
+: 1694362917:0;zap update all
+: 1694362917:0;ls la
+: 1694362917:0;ls -la
+: 1694362917:0;brew install lsd
+: 1694362917:0;lsd
+: 1694362917:0;touch ~/.config/zsh/aliases.zsh
+: 1694362917:0;touch ~/.config/zsh/exports.zsh
+: 1694362917:0;touch ~/.config/zsh/sketchybar.zsh
+: 1694362917:0;df
+: 1694362917:0;cat .lesshst
+: 1694362917:0;cat .profile
+: 1694362917:0;cat .zprofile
+: 1694362917:0;cat .zcompdump
+: 1694362917:0;cd com.alamofire.imagedownloader
+: 1694362917:0;cd ..
+: 1694362917:0;cd ~/
+: 1694362917:0;brew --version
+: 1694362917:0;lazyload nvm -- 'source "$(brew --prefix nvm)/nvm.sh"'
+: 1694362917:0;brew install jq
+: 1694362917:0;n
+: 1694362917:0;brew install ranger
+: 1694362917:0;brew reinstall neovim
+: 1694362917:0;brew remove neovim
+: 1694362917:0;brew install neovim
+: 1694362917:0;touch ~/.config/nvim/lua/custom/custom.mappings.lua
+: 1694362917:0;rm -rf ~/.config/nvim
+: 1694362917:0;brew install make pip npm node cargo
+: 1694362917:0;brew install make npm node cargo
+: 1694362917:0;brew install make npm node rust
+: 1694362917:0;mkdir ~/.npm-global
+: 1694362917:0;npm config set prefix '~/.npm-global'
+: 1694362917:0;nvim ~/.profile
+: 1694362917:0;source ~/.profile
+: 1694362917:0;npm install -g jshint
+: 1694362917:0;LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+: 1694362917:0;lvim +LvimUpdate +q
+: 1694362917:0;lvim
+: 1694362917:0;bash ~/.local/share/lunarvim/lvim/utils/installer/uninstall.sh\
+
+: 1694362917:0;nvim ~/.config/nvim/lua/custom/chadrc.lua
+: 1694362917:0;$ brew install ripgrep
+: 1694362917:0;brew search littlesnitch
+: 1694362917:0;brew install wezterm
+: 1694362917:0;nvim ~/.config/starship.toml
+: 1694362917:0;nvim ~/.ssh/id_rsa.pub
+: 1694362917:0;cat ~/.ssh/id_rsa.pub
+: 1694362917:0;rsync ~/.config/nvim root@146.190.152.137:.config/
+: 1694362917:0;rsync ~/.config/nvim root@146.190.152.137:.config/ --progress --partial
+: 1694362917:0;rsync ~/.config/nvim root@146.190.152.137:/.config/ --progress --partial
+: 1694362917:0;brew install sshfs
+: 1694362917:0;git clone https://github.com/nekowinston/dotfiles.git
+: 1694362917:0;git clone https://github.com/nekowinston/dotfiles.git winstondots
+: 1694362917:0;cp home/apps/wezterm ~/.config
+: 1694362917:0;cd lua/plugins
+: 1694362917:0;nvim catppuccin.lua
+: 1694362917:0;rm -rf ~/.local/share/nvim
+: 1694362917:0;nvim ~/.config/wezterm/theme.lua
+: 1694362917:0;nvim ~/.config/nvim/lua/plugins/example.lua
+: 1694362917:0;mv ~/.config/nvim ~/.config/nvim.bak\
+
+: 1694362917:0;mv ~/.local/share/nvim ~/.local/share/nvim.bak\
+
+: 1694362917:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1694362917:0;rm -rf ~/.config/nvim/.git
+: 1694362917:0;touch ~/.config/nvim/lua/plugins/catppuccin.lua
+: 1694362917:0;nvim ~/Library/Application Support/Hyper/.hyper.js
+: 1694362917:0;npm install -g hypurr
+: 1694362917:0;cp ~/hyper.js ~/.hyper.js
+: 1694362917:0;cp ~/.hyper.js ~/Library/Application\ Support/Hyper/.hyper.js
+: 1694362917:0;nvim ~/hyper.js
+: 1694362917:0;rm ~/Library/Application\ Support/Hyper/.hyper.js
+: 1694362917:0;nvim ~/.config/wezterm/utils.lua
+: 1694362917:0;psmem
+: 1694362917:0;ps
+: 1694362917:0;ps auxf
+: 1694362917:0;git clone https://github.com/dotzenith/dotconfig.git dotzenith
+: 1694362917:0;nvim ~/.config/zsh/exports.zsh
+: 1694362917:0;mv ~/.zcom* ~/.config/zsh/zcom
+: 1694362917:0;git clone https://github.com/chrisgrieser/.config.git chrisgrieser
+: 1694362917:0;mv ~/.config/wezterm ~/.config/wezterm.bak
+: 1694362917:0;mkdir ~/.config/zsh/zcom
+: 1694362917:0;cp ~/clones/chrisgrieser/wezterm ~/.config
+: 1694362917:0;mv ~/clones/chrisgrieser/wezterm ~/.config
+: 1694362917:0;la ~/.config
+: 1694362917:0;rm ~/.config/wezterm/.DS_Store
+: 1694362917:0;mv ~/.config/wezterm ~/.config/wezterm.bak.bak
+: 1694362917:0;mv ~/.config/wezterm.bak ~/.config/wezterm
+: 1694362917:0;mv ~/.config/wezterm ~/.config/wezterm.3
+: 1694362917:0;mv ~/.config/wezterm.bak.bak ~/.config/wezterm
+: 1694362917:0;nvim ~/.config/nvim/lua/config/options.lua
+: 1694362917:0;git clone https://github.com/x0ba/dotfiles.git x0ba
+: 1694362917:0;cd x
+: 1694362917:0;cd x0ba
+: 1694362917:0;las
+: 1694362917:0;mv ~/.config/wezterm ~/.config/wezterm.4
+: 1694362917:0;cp ~/clones/x0ba/config/wezterm ~/.config
+: 1694362917:0;rm ~/.config/wezterm
+: 1694362917:0;rm -R ~/.config/wezterm
+: 1694362917:0;mv ~/clones/winstondots/home/apps/wezterm ~/.config
+: 1694362917:0;mv ~/clones/x0ba/config/wezterm ~/.config
+: 1694362917:0;mv ~/.config/wezterm.4 ~/.config/wezterm
+: 1694362917:0;nvim ~/.config/sketchybar/colors.sh
+: 1694362917:0;git clone https://github.com/sgolovine/nerdfont-patcher.git
+: 1694362917:0;cd nerdfont-patcher
+: 1694362917:0;./font-patcher --complete --progressbars ~/clones/nerdfont-patcher/InklinationMono-Rg.otf
+: 1694362917:0;brew search fontforge
+: 1694362917:0;brew install fontforge
+: 1694362917:0;brew install --cask fontforge
+: 1694362917:0;./fontforge font-patcher --complete --progressbars ~/clones/nerdfont-patcher/InklinationMono-Rg.otf
+: 1694362917:0;fontforge ./font-patcher --complete --progressbars ~/clones/nerdfont-patcher/InklinationMono-Rg.otf
+: 1694362917:0;fontforge --script ~/clones/font-patcher --complete --progressbars ~/clones/nerdfont-patcher/InklinationMono-Rg.otf
+: 1694362917:0;fontforge --script ~/clones/nerdfont-patcher/font-patcher --complete --progressbars ~/clones/nerdfont-patcher/InklinationMono-Rg.otf
+: 1694362917:0;fontforge --script ~/Downloads/FontPatcher/font-patcher --complete --progressbars ~/clones/nerdfont-patcher/InklinationMono-Rg.otf
+: 1694362917:0;git clone https://github.com/Amitabha37377/Awful-DOTS.git
+: 1694362917:0;/Volumes/Dash\ 6.4.2/Extra/rhash ; exit;
+: 1694362917:0;brew install fd
+: 1694362917:0;defaults write com.apple.dock static-only -bool true\
+
+: 1694362917:0;yabai --stop-service
+: 1694362917:0;brew remove yabai skhd
+: 1694362917:0;brew autoremove
+: 1694362917:0;brew cleanup
+: 1694362917:0;brew cleanup luajit
+: 1694362917:0;gping mail.zecher-sadrach.cl
+: 1694362917:0;ssh root@146.190.152.137
+: 1694362917:0;gping zecher-sadrach.cl
+: 1694362917:0;gping d2crgj1bx58i40.cloudfront.net.
+: 1694362917:0;cd clones/servidor/node
+: 1694362917:0;cat next.config.js
+: 1694362917:0;brew install node yarn
+: 1694362917:0;yarn build
+: 1694362917:0;yarn start
+: 1694362917:0;npm build
+: 1694362917:0;npm run build
+: 1694362917:0;npm i next
+: 1694362917:0;npm audit
+: 1694362917:0;npm i next -G
+: 1694362917:0;npm audit fix
+: 1694362917:0;npm i -g next
+: 1694362917:0;next dev
+: 1694362917:0;npm update
+: 1694362917:0;next start
+: 1694362917:0;next lint
+: 1694362917:0;next build
+: 1694362917:0;brew install nmap
+: 1694362917:0;nmap zecher-sadrach.cl -80p
+: 1694362917:0;nmap zecher-sadrach.cl -p 80
+: 1694362917:0;killall Dock
+: 1694362917:0;killall Dock && Finder
+: 1694362917:0;killall finder
+: 1694362917:0;apt clean
+: 1694362917:0;exa la
+: 1694362917:0;exa l
+: 1694362917:0;exa -h
+: 1694362917:0;exa -l
+: 1694362917:0;exa --icons
+: 1694362917:0;exa --icons -l
+: 1694362917:0;exa --icons -la
+: 1694362917:0;exa --icons -laB
+: 1694362917:0;exa --icons -laD
+: 1694362917:0;exa --icons -ad
+: 1694362917:0;exa --icons -aD
+: 1694362917:0;exa --icons -aDG
+: 1694362917:0;exa --icons -aDL
+: 1694362917:0;exa --icons -aDl
+: 1694362917:0;exa --icons -aD1
+: 1694362917:0;exa --icons -Ra
+: 1694362917:0;exa --help
+: 1694362917:0;exa --icons -lad
+: 1694362917:0;exa --icons -xa
+: 1694362917:0;exa --icons -a
+: 1694362917:0;exa --icons -al
+: 1694362917:0;exa --icons --colors -al
+: 1694362917:0;exa --icons --color -al
+: 1694362917:0;exa --icons --color
+: 1694362917:0;exa -la --icons --color auto
+: 1694362917:0;exa -la
+: 1694362917:0;exa -a
+: 1694362917:0;nvim ~/.zshrc
+: 1694362917:0;zap clean
+: 1694362917:0;ll
+: 1694362917:0;lm
+: 1694362917:0;stats
+: 1694362917:0;exa -la --icons
+: 1694362917:0;exa --icons --color auto
+: 1694362917:0;exa -a --icons --color auto
+: 1694362917:0;nvim ~/.config/zsh/aliases.zsh
+: 1694362917:0;ll -a
+: 1694362917:0;lss
+: 1694362917:0;nvim ~/.config/sketchybar/sketchybarrc
+: 1694362917:0;brew services stop sketchybar
+: 1694362917:0;fig source
+: 1694362917:0;ssh github.com
+: 1694362917:0;fig add .
+: 1694362917:0;git rm --cached zsh/plugins/emoji-cli_b4b4r07
+: 1694362917:0;git rm -f --cached zsh/plugins/emoji-cli_b4b4r07
+: 1694362917:0;G commit
+: 1694362917:0;pscpu
+: 1694362917:0;free
+: 1694362917:0;lazygit
+: 1694362917:0;g
+: 1694362917:0;git stat
+: 1694362917:0;G stat
+: 1694362917:0;clear
+: 1694362917:0;gadd
+: 1694362917:0;brew install keka
+: 1694362917:0;gadd .
+: 1694362917:0;home
+: 1694362917:0;cat ~/.config/zsh/aliases.zsh
+: 1694362917:0;log
+: 1694362917:0;git commit -m "fix"
+: 1694362917:0;git push
+: 1694362917:0;fig run commit
+: 1694362917:0;commit -m "split files"
+: 1694362917:0;commit -m "re upload files"
+: 1694362917:0;brew install gh
+: 1694362917:0;gh auth login
+: 1694362917:0;git_remote_status
+: 1694362917:0;gh status
+: 1694362917:0;gh stat
+: 1694362917:0;gh push
+: 1694362917:0;gh pr status
+: 1694362917:0;curl -sfL https://raw.githubusercontent.com/mistakenelf/fm/main/install.sh | sh
+: 1694362917:0;sudo curl -sfL https://raw.githubusercontent.com/mistakenelf/fm/main/install.sh | sh
+: 1694362917:0;brew install fm
+: 1694362917:0;brew install go
+: 1694362917:0;go install github.com/mistakenelf/fm@latest
+: 1694362917:0;fm
+: 1694362917:0;l
+: 1694362917:0;cd servidor/
+: 1694362917:0;commit -m "script install libredte"
+: 1694362917:0;nvim AutoInstall.sh
+: 1694362917:0;nvim docker-compose.yml
+: 1694362917:0;cat docker-compose.yml
+: 1694362917:0;killall Finder
+: 1694362917:0;brew install karabiner
+: 1694362917:0;brew install --cask karabiner-elements
+: 1694362917:0;reboot
+: 1694362917:0;diskutil
+: 1694362917:0;diskutil -l
+: 1694362917:0;diskutil l
+: 1694362917:0;diskutil apfs deleteContainer disk0s4\
+\
+
+: 1694362917:0;diskutil apfs deleteContainer disk0s5\
+\
+
+: 1694362917:0;sudo diskutil apfs deleteContainer disk0s5\
+\
+
+: 1694362917:0;diskutil eraseVolume free free disk0s4
+: 1694362917:0;diskutil eraseVolume free free disk0s5
+: 1694362917:0;diskutil eraseVolume free free disk0s6
+: 1694362917:0;diskutil apfs resizeContainer disk0s2
+: 1694362917:0;diskutil apfs resizeContainer disk2 0
+: 1694362917:0;diskutil apfs resizeContainer disk0s2 400GB
+: 1694362917:0;diskutil apfs resizeContainer disk4 0
+: 1694362917:0;sudo diskutil apfs resizeContainer disk0s2 0
+: 1694362917:0;sudo diskutil apfs resizeContainer disk0s2
+: 1694362917:0;wget https://raw.githubusercontent.com/AsahiLinux/asahi-installer/main/tools/wipe-linux.sh
+: 1694362917:0;chmod -x wipe-linux.sh
+: 1694362917:0;chmod 777 wipe-linux.sh
+: 1694362917:0;wipe-linux.sh
+: 1694362917:0;diskutil apfs resizeContainer disk0s2 0
+: 1694362917:0;gping google.cll
+: 1694362917:0;nvim wipe-linux.sh
+: 1694362917:0;sudo ./wipe-linux.sh
+: 1694362917:0;./wipe-linux.sh
+: 1694362917:0;cat wipe-linux.sh
+: 1694362917:0;brew services start sketchybar
+: 1694362917:0;curl https://alx.sh | sh
+: 1694362917:0;sudo dd if=/Users/sadrach/Downloads/nixos-gnome-23.05.3103.841889913dfd-aarch64-linux.iso of=/dev/disk5 status=progress
+: 1694362917:0;sudo ~/wipe-linux.sh
+: 1694362917:0;curl https://fedora-asahi-remix.org/install | sh\
+
+: 1694362917:0;git status
+: 1694362917:0;git pull
+: 1694362917:0;git pull --no-rebase
+: 1694362917:0;killall Fig
+: 1694362917:0;fig uninstall
+: 1694362917:0;lls ~/clones/conf
+: 1694362917:0;cp ~/.config/wezterm ~/.config/wezterm.bak
+: 1694362917:0;cp -r ~/.config/wezterm ~/.config/wezterm.bak
+: 1694362917:0;cp -R ~/.config/wezterm ~/.config/wezterm.bak
+: 1694362917:0;sudo rm -R ~/.config/wezterm
+: 1694362917:0;ln -s ~/clones/conf/wezterm ~/.config
+: 1694362917:0;nvim ~/.config/wezterm/wezterm.lua
+: 1694362917:0;rm -rf "$HOME/Library/Input Methods/FigInputMethod.app"
+: 1694362917:0;rm "$HOME/Library/Application Support/iTerm2/Scripts/AutoLaunch/fig-iterm-integration.scpt"\
+\
+
+: 1694362917:0;sudo rm -r ~/.local/bin/fig
+: 1694362917:0;csrutil status
+: 1694362917:0;brew install koekeishiya/formulae/yabai
+: 1694362917:0;yabai --start-service
+: 1694362917:0;sudo visudo -f /private/etc/sudoers.d/yabai\
+
+: 1694362917:0;whoami
+: 1694362917:0;which yabai
+: 1694362917:0;shasum -a 256 $(which yabai))
+: 1694362917:0;shasum -a 256 $(which yabai)
+: 1694362917:0;sudo nvram boot-args=-arm64e_preview_abi
+: 1694362917:0;skhd --stop-service
+: 1694362917:0;nvim ~/.config/yabai/yabairc
+: 1694362917:0;skhd -o
+: 1694362917:0;commit -m "update skhd delete forward"
+: 1694362917:0;git rm --cached .DS_Store
+: 1694362917:0;lls ~/clones/conf/nvim
+: 1694362917:0;lls ~/clones/conf/nvim/lua/plugins
+: 1694362917:0;lls ~/.config/nvim/lua/plugins
+: 1694362917:0;sudo rm -r ~/.config/nvim
+: 1694362917:0;sudo rm -r ~/.config/zsh
+: 1694362917:0;sudo rm -r ~/.config/starship
+: 1694362917:0;sudo rm -r ~/.config/starship.toml
+: 1694362917:0;ln -s ~/clones/conf/starship/My_starship.toml ~/.config/starship.toml
+: 1694362917:0;nvim ~/.config/alacritty/alacritty.yml
+: 1694362917:0;nvim ~/.config/kitty/kitty.conf
+: 1694362917:0;nvim .gitignore
+: 1694362917:0;git rm --cached *DS_Store
+: 1694362917:0;add skhd/skhdrc
+: 1694362917:0;add wezterm/wezterm.lua
+: 1694362917:0;add yabai/
+: 1694362917:0;add yabai/yabairc
+: 1694362917:0;add .gitignore
+: 1694362917:0;add .
+: 1694362917:0;commit -m "update skhd forward delete"
+: 1694362917:0;cd sadrach/clones
+: 1694362917:0;git clone https://github.com/sadrach-cl/conf.git
+: 1694362917:0;touch ~/.config/nvim/lua/plugins/colorizer.lua
+: 1694362917:0;touch ~/.config/wezterm/keys.lua
+: 1694362917:0;lls ~/.config
+: 1694362917:0;sadrach 5 Sep 12:34 ïƒ¤ƒµ wezterm.bak\
+lrwxr-xr-x 32 sadrach 2 Aug 22:32 ïƒ¤ƒµ yabai -> /Users/sadrach/clones/conf/yabai\
+lrwxr-xr-x 30 sadrach 5 Sep 17:29 ïƒ¤ƒµ zsh -> /Users/sadrach/clones/conf/zsh\
+
+: 1694362917:0;gping google.cl
+: 1694362917:0;lls nixpkgs
+: 1694362917:0;cat nixpkgs/config.nix
+: 1694362917:0;cat nixpkgs/home.nix
+: 1694362917:0;./nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+: 1694362917:0;cd /nix/var/nix/profiles/default/etc/profile.d
+: 1694362917:0;./nix-daemon.sh
+: 1694362917:0;cat nix-daemon.sh
+: 1694362917:0;fdisk -l
+: 1694362917:0;fdisk
+: 1694362917:0;diskutil list
+: 1694362917:0;sudo rm -r ~/.config/kitty
+: 1694362917:0;sudo rm -r ~/clones/conf/SketchyBar
+: 1694362917:0;cp -R ~/.config/sketchybar ~/clones
+: 1694362917:0;sudo rm -r ~/.config/sketchybar
+: 1694362917:0;ln -s ~/clones/conf/sketchybar ~/.config
+: 1694362917:0;lla ~/.config
+: 1694362917:0;v ~/clones/conf/kitty/kitty.conf
+: 1694362917:0;v ~/.config/nvim/lua/plugins/catppuccin.lua
+: 1694362917:0;v ~/.config/wezterm/wezterm.bak
+: 1694362917:0;wget https://github.com/NixOS/nixpkgs/raw/master/nixos/modules/installer/tools/nix-fallback-paths.nix'
+: 1694362917:0;wget https://github.com/NixOS/nixpkgs/raw/master/nixos/modules/installer/tools/nix-fallback-paths.nix
+: 1694362917:0;chmod 777 ./nix-fallback-paths.nix
+: 1694362917:0;./nix-fallback-paths.nix
+: 1694362917:0;sudo ./nix-fallback-paths.nix
+: 1694362917:0;curl -L https://nixos.org/nix/install | sh\
+
+: 1694362917:0;host
+: 1694362917:0;host -l
+: 1694362917:0;mkdir -p hosts/sheldon
+: 1694362917:0;cat .nix-profile
+: 1694362917:0;cat nix-fallback-paths.nix
+: 1694362917:0;rm nix-fallback-paths.nix
+: 1694362917:0;sudo mkdir -p sadnix
+: 1694362917:0;mkdir -p sadnix
+: 1694362917:0;git init -b main
+: 1694362917:0;nix flake init
+: 1694362917:0;nix flake init --extra-experimental-features
+: 1694362917:0;nix --extra-experimental-features nix-command
+: 1694362917:0;nix flake --extra-experimental-features nix-command
+: 1694362917:0;nix flake init --extra-experimental-features nix-command
+: 1694362917:0;nix flake init --extra-experimental-features flakes
+: 1694362917:0;nix flake init --extra-experimental-features nix-command nix-flakes
+: 1694362917:0;nix flake init --extra-experimental-features nix-command --extra-experimental-features nix-flakes
+: 1694362917:0;nix flake init --extra-experimental-features nix-command --extra-experimental-features flakes
+: 1694362917:0;cat flake.nix
+: 1694362917:0;nix build
+: 1694362917:0;nixos-rebuild switch --flake
+: 1694362917:0;v hosts/sheldon/default.nix
+: 1694362917:0;nix
+: 1694362917:0;nix build .#DARwinConfigurations.YourHostName.system --extra-experimental-features "nix-command flakes"\
+
+: 1694362917:0;nix build --extra-experimental-features "nix-command flakes"\
+
+: 1694362917:0;nix run . -- build --flake .
+: 1694362917:0;nix run . -- build --flake . --extra-experimental-features nix-command
+: 1694362917:0;nix run . --extra-experimental-features "nix-command flakes" --build --flake .
+: 1694362917:0;nix run github:srid/nix-health
+: 1694362917:0;nix run github:srid/nix-health --extra-experimental-features nix-command
+: 1694362917:0;nix run github:srid/nix-health --extra-experimental-features nix-command --extra-experimental-features flakes
+: 1694362917:0;bat sadnix/flake.nix
+: 1694362917:0;bat /etc/zshrc
+: 1694362917:0;nix run . -- build --flake . --extra-experimental-features "nix-command flakes"\
+
+: 1694362917:0;nix build .#darwinConfigurations.sheldon.system --extra-experimental-features "nix-command flakes"\
+
+: 1694362917:0;nix -v
+: 1694362917:0;nix --version
+: 1694362917:0;nix --help
+: 1694362917:0;nix build .
+: 1694362917:0;sudo nvim /etc/zshrc
+: 1694362917:0;sudo nvim /etc/bashrc
+: 1694362917:0;sudo nvim /etc/bash.bashrc
+: 1694362917:0;sudo dscl . -delete /Groups/nixbld
+: 1694362917:0;for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Users/$u; done\
+
+: 1694362917:0;sudo nvim /etc/synthetic.conf
+: 1694362917:0;sudo rm -r /nix
+: 1694362917:0;sudo rm -R /nix
+: 1694362917:0;sudo rm /nix
+: 1694362917:0;sudo rmdir /nix
+: 1694362917:0;lla /nix
+: 1694362917:0;lla /
+: 1694362917:0;compaudit
+: 1694362917:0;sudo chown -R root:root /usr/local/share/zsh/site-functions
+: 1694362917:0;sudo chown -R sadrach:sadrach /usr/local/share/zsh/site-functions
+: 1694362917:0;sudo chmod -R 755 /usr/local/share/zsh
+: 1694362917:0;sudo compaudit
+: 1694362917:0;compaudit -l
+: 1694362917:0;compaudit -h
+: 1694362917:0;export ZSH_DISABLE_COMPFIX=true\
+
+: 1694362917:0;darwin-rebuild switch --flake ~/.config/nix-darwin
+: 1694362917:0;bat .nix-profile
+: 1694362917:0;sudo bat .nix-profile
+: 1694362917:0;bat /Users/sadrach/.local/state/nix/profiles/profile
+: 1694362917:0;/nix/nix-installer uninstall
+: 1694362917:0;sudo rm .nix-profile
+: 1694362917:0;sudo rmdir .nix-defexpr
+: 1694362917:0;sudo rm -R .nix-defexpr
+: 1694362917:0;. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+: 1694362917:0;nvim .nix-profil
+: 1694362917:0;nvim .nix-profile
+: 1694362917:0;lls .nix-defexpr
+: 1694362917:0;nix-env --install --attr nixpkgs.hello\
+
+: 1694362917:0;nix upgrade-nix
+: 1694362917:0;Dsenableroot
+: 1694362917:0;lla /Users/
+: 1694362917:0;ls -ll
+: 1694362917:0;sudo dseditgroup -o edit -a sadrach -t user admin
+: 1694362917:0;sudo dseditgroup -o edit -a sadrach -t user wheel
+: 1694362917:0;ls -ll /Users
+: 1694362917:0;sudo nix upgrade-nix
+: 1694362917:0;hostname -s
+: 1694362917:0;lla /Users/sadrach/
+: 1694362917:0;nix-env --version
+: 1694362917:0;lls .config/nix
+: 1694362917:0;bat .config/nix/nix.conf
+: 1694362917:0;cd sadnix
+: 1694362917:0;rm .git
+: 1694362917:0;sudo rm .git
+: 1694362917:0;sudo rm -R .git
+: 1694362917:0;nvim flake.nix
+: 1694362917:0;nvim home.nix
+: 1694362917:0;git init && git add .
+: 1694362917:0;nix run . switch
+: 1694362917:0;nix run github:eza-community/eza\
+
+: 1694362917:0;nix run github:eza-community/eza -la ~/
+: 1694362917:0;nix run github:eza-community/eza -1a ~/
+: 1694362917:0;nix run github:eza-community/eza --1a ~/
+: 1694362917:0;nix run github:eza-community/eza -- -1a ~/
+: 1694362917:0;nix run github:eza-community/eza -- -la ~/
+: 1694362917:0;nix run github:eza-community/eza -- -ol ~/
+: 1694362917:0;nix run github:eza-community/eza -- -olt ~/
+: 1694362917:0;nix run github:eza-community/eza -- -olT ~/
+: 1694362917:0;nix run github:eza-community/eza -- -olT ~/clones/conf
+: 1694362917:0;nix run github:eza-community/eza -- -olT ~/clones/conf/zsh/\ 
+: 1694362917:0;nix run github:eza-community/eza -- -olT ~/clones/conf/zsh/
+: 1694362917:0;bat ~/.zshrc
+: 1694362917:0;lls /etc
+: 1694362917:0;cd /etc
+: 1694362917:0;cp bashrc bashrc.before-nix-darwin
+: 1694362917:0;sudo cp bashrc bashrc.before-nix-darwin
+: 1694362917:0;sudo cp zshrc zshrc.before-nix-darwin
+: 1694362917:0;sudo rm zshrc
+: 1694362917:0;rm ~/.config/nvim
+: 1694362917:0;~
+: 1694362917:0;bat ~/.config/nix/nix.conf
+: 1694362917:0;nix-env -iA nixpkgs.git
+: 1694362917:0;git clone https://github.com/matthiasbenaets/nixos-config ~/.setup
+: 1694362917:0;cd .setup
+: 1694362917:0;bat flake.nix
+: 1694362917:0;darwin-rebuild switch --flake .#macbook
+: 1694362917:0;nix profile list
+: 1694362917:0;nix profile rollback
+: 1694362917:0;cd winstondots
+: 1694362917:0;nix build .#darwinConfigurations.sheldon.system
+: 1694362917:0;nix build .#darwinConfigurations.sashimi.system
+: 1694362917:0;nix build .#darwinConfigurations.sashimi.system\
+
+: 1694362917:0;nix build .#darwinConfigurations.sashimi.system --show-trace\
+
+: 1694362917:0;sudo vim /etc/zshrc
+: 1694362917:0;sudo vim /etc/bash.bashrc
+: 1694362917:0;sudo vim /etc/bashrc
+: 1694362917:0;sudo mv /etc/zshrc.backup-before-nix /etc/zshrc
+: 1694362917:0;sudo launchctl unload /Library/LaunchDaemons/org.nixos.nix-daemon.plist
+: 1694362917:0;sudo rm /Library/LaunchDaemons/org.nixos.nix-daemon.plist
+: 1694362917:0;sudo launchctl unload /Library/LaunchDaemons/org.nixos.darwin-store.plist
+: 1694362917:0;sudo rm /Library/LaunchDaemons/org.nixos.darwin-store.plist
+: 1694362917:0;sudo dscl . -delete /Groups/nixbld\
+for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Users/$u; done\
+
+: 1694362917:0;sudo vifs
+: 1694362917:0;sudo vim /etc/synthetic.conf
+: 1694362917:0;sudo rm -rf /etc/nix /var/root/.nix-profile /var/root/.nix-defexpr /var/root/.nix-channels ~/.nix-profile ~/.nix-defexpr ~/.nix-channels\
+
+: 1694362917:0;sudo diskutil apfs deleteVolume /nix\
+
+: 1694362917:0;cat .zshrc
+: 1694362917:0;exa .zshrc
+: 1694362917:0;sudo rm -R .zshrc
+: 1694362917:0;ln -s ~/clones/conf/.zshrc ~/
+: 1694362917:0;sudo rm -R ~/.config/zsh
+: 1694362917:0;ln -s ~/clones/conf/zsh ~/.config
+: 1694362917:0;zsh
+: 1694362194:2;vim
+: 1694362204:0;lla /Users/sadrach/.config
+: 1694362219:0;lla /Users/sadrach/.config/nvim
+: 1694362235:2;sudo rm -R ~/.config/nvim
+: 1694362370:0;cd clones/conf
+: 1694362387:0;pull
+: 1694362399:0;stat
+: 1694362579:0;git restore nvim/init.lua
+: 1694362607:0;git restore --staged nvim/init.lua
+: 1694362823:25;git clone https://github.com/sadrach-cl/conf.git conf2
+: 1694362901:0;cd conf
+: 1694362915:1;ln -s ~/clones/conf/nvim ~/.config
+: 1694363330:10;brew install eza
+: 1694363376:3;brew install zoxide
+: 1694363390:1;zoxide
+: 1694363407:0;zoxide ..
+: 1694363431:0;zoxide clones
+: 1694363521:0;z home
+: 1694363568:0;z .config
+: 1694363591:0;z con 'z#/Users/sadrach/.config'
+: 1694363609:0;z c 'z#/Users/sadrach/clones'
+: 1694363674:0;git add .
+: 1694363693:0;commit -m "update wezterm 2"
+: 1694363709:2;push
+: 1694363833:2;brew install ripgrep
+: 1694363862:0;z ../winstondots
+: 1694363895:0;rg -i sashimi
+: 1694364002:0;z c 'z#/Users/sadrach/clones/conf'
+: 1694364010:0;eza -1
+: 1694364015:0;eza -G
+: 1694364017:0;eza -1G
+: 1694364027:0;eza -Ga
+: 1694364045:0;eza -GaX
+: 1694364050:0;eza -GX
+: 1694364062:0;eza -X
+: 1694364097:1;eza -Ga --colour
+: 1694364107:0;eza -Ga --colour auto
+: 1694364135:0;eza -Ga --icons
+: 1694364178:0;z c 'z#/Users/sadrach/.config'
+: 1694364181:0;eza -Ga --icons --hyperlink
+: 1694364190:0;eza -a --icons --hyperlink
+: 1694364220:0;eza -1a --icons --hyperlink -W
+: 1694364233:0;eza -1a --icons -W
+: 1694364240:0;eza -1aW --icons
+: 1694364249:0;eza -1a --icons --hyperlink
+: 1694364279:0;lls -r
+: 1694364402:0;bat .zim
+: 1694364409:0;z .zim
+: 1694364415:0;eza --all ..
+: 1694364418:0;eza --all .
+: 1694364429:0;bat .latest_version
+: 1694364433:18;bat .latest_version zimfw.zsh
+: 1694364485:2;sudo rm -R ~/.zim
+: 1694364506:0;eza --all
+: 1694364526:0;bat .zshenv
+: 1694364560:0;eza -1ar --icons --hyperlink
+: 1694364589:0;sudo rm -R ~/.zshenv
+: 1694364668:0;eza -l
+: 1694364679:0;eza -lar --icons --hyperlink
+: 1694364690:1;eza -la --icons --hyperlink
+: 1694364720:0;eza -la --icons --hyperlink --group-directories-first
+: 1694365256:335;v .config/kitty/kitty.conf
+: 1694365663:0;eza -la
+: 1694365701:0;eza -la .config/zsh
+: 1694365738:2;sudo rm -R .config/zsh/history
+: 1694365775:0;mv .zsh_history ~/.config/zsh/history
+: 1694365815:0;eza -a --icons --hyperlink --group-directories-first .wakatime
+: 1694365922:2;brew list highway karabiner-element
+: 1694390593:0;z clones/conf
+: 1694390619:0;mkdir -p nix-flake
+: 1694390621:0;z nix-flake
+: 1694390634:0;touch flake.nix
+: 1694390643:0;mkdir -p hosts
+: 1694390663:0;touch hosts/default.nix
+: 1694390670:0;touch hosts/home.nix
+: 1694390789:0;eza -aT --icons --hyperlink
+: 1694392145:72;curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+: 1694392227:0;/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+: 1694393377:0;zzzzz
+: 1694393392:49;nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A uninstaller\
+
+: 1694393491:22;./result/bin/darwin-installer\
+
+: 1694407874:199;find ~ '*lvim*' | fzf
+: 1694408183:62;v $(fzf)
+: 1694408254:74;v $(fzf) .zshrc
+: 1694408964:6;ls $(fzf)
+: 1694449509:0;mv starship.toml starship.toml.bak
+: 1694449512:0;lls .config
+: 1694449558:2;rm starship.toml.bak
+: 1694449592:0;z co
+: 1694449617:0;lla
+: 1694449634:0;lls
+: 1694449646:2;rm starship.toml
+: 1694449699:0;z con
+: 1694449938:2;zi c
+: 1694404218:2596;su -
+: 1694405775:0;eza -a --icons --hyperlink --group-directories-first /System/Volumes/Data/private/etc/profile.d/
+: 1694405780:0;eza -a --icons --hyperlink --group-directories-first /System/Volumes/Data/private/etc/
+: 1694405843:0;eza -a --icons --hyperlink --group-directories-first /System/Volumes/Data/private/etc/profiles
+: 1694405854:0;eza -a --icons --hyperlink --group-directories-first /System/Volumes/Data/private/etc/profiles/per-user
+: 1694405885:0;cat /System/Volumes/Data/private/etc/profile.d/nix.sh
+: 1694405891:0;bat /System/Volumes/Data/private/etc/profile.d/nix.sh
+: 1694405917:13;bat /System/Volumes/Data/private/etc/zshrc
+: 1694405947:2;sudo rm -rf /System/Volumes/Data/private/etc/profile.d/nix.sh
+: 1694455430:0;rm -rf result
+: 1694404856:7;eza -aT --icons --hyperlink --group-directories-first
+: 1694404880:0;eza
+: 1694404918:0;bat .lesshst
+: 1694404926:0;bat .profile
+: 1694404948:0;bat .zshrc
+: 1694405052:4;v .bashrc
+: 1694405361:0;find -name ~ nix*
+: 1694405367:0;find -name nix*
+: 1694405378:0;find -name nix* ~/
+: 1694405435:88;find ~ -name "nix*"
+: 1694405537:0;find /var -name "nix*"
+: 1694405543:1;find /var/ -name "nix*"
+: 1694405575:182;sudo find / -name "nix*"
+: 1694406063:2;sudo rm -rf .setup
+: 1694406068:0;eza -a --icons --hyperlink --group-directories-first .setup
+: 1694406072:0;eza -a --icons --hyperlink --group-directories-first
+: 1694406095:0;eza -a --icons --hyperlink --group-directories-first .zsh_sessions
+: 1694406134:0;eza -a --icons --hyperlink --group-directories-first /Users/sadrach/.local/share/nix
+: 1694406144:0;bat /Users/sadrach/.local/share/nix/trusted-settings.json
+: 1694406166:0;sudo rm -rf /Users/sadrach/.local/share/nix
+: 1694406234:0;bat /Users/sadrach/.local/state/nix/profiles/home-manager
+: 1694406248:0;rm -rf /Users/sadrach/.local/state/nix
+: 1694406260:0;eza -a --icons --hyperlink --group-directories-first /Users/sadrach/.local/state/nix
+: 1694406273:0;eza -a --icons --hyperlink --group-directories-first /Users/sadrach/.local/state/home-manager
+: 1694406281:0;eza -a --icons --hyperlink --group-directories-first /Users/sadrach/.local/state/home-manager/gcroots
+: 1694406307:0;rm -rf /Users/sadrach/.local/state/home-manager
+: 1694406321:0;eza -a --icons --hyperlink --group-directories-first /Users/sadrach/.local/state/znap
+: 1694406410:0;rm -rf /Users/sadrach/.local/state/znap
+: 1694406492:0;eza -a --icons --hyperlink --group-directories-first /System/Volumes/Data/Users/sadrach/.local/share/nix
+: 1694406520:0;eza -a --icons --hyperlink --group-directories-first /System/Volumes/Data/Users/sadrach/.local/share/zsh-snap
+: 1694406537:0;rm -rf /System/Volumes/Data/Users/sadrach/.local/share/zsh-snap
+: 1694407049:44;sudo find / -name "*nixos*"
+: 1694407510:0;fzf ~ -name lvim
+: 1694408385:0;fzf ~ -name '*lvim*'
+: 1694408395:6;find ~ -name '*lvim*'
+: 1694408420:3;sudo rm -rf /Users/sadrach/.local/state/lvim
+: 1694408440:0;sudo rm -rf /Users/sadrach/.local/share/lvim
+: 1694408456:23;su
+: 1694408492:0;bat .terminfo
+: 1694408557:0;eza -a --icons --hyperlink --group-directories-first xcode
+: 1694455462:0;eza -l --icons --hyperlink --group-directories-first
+: 1694455701:0;eza -L --icons --hyperlink --group-directories-first
+: 1694562263:0;nix flake-show
+: 1694562273:0;nix flake show
+: 1694562298:0;nix flake show --extra-experimental-features nix-command
+: 1694562340:2;nix flake show --extra-experimental-features nix-command --extra-experimental-features flakes
+: 1694562393:0;nix flake show --extra-experimental-features nix-command --extra-experimental-features flakes --all-system
+: 1694562423:0;nix flake show --all-system --extra-experimental-features nix-command --extra-experimental-features flakes
+: 1694563277:0;z ~/sadnix
+: 1694475064:0;nix-info
+: 1694475116:70;nix-shell -p nix-info
+: 1694475201:4;nix-shell -p nix-info --run "nix-info -m"\
+
+: 1694560626:0;cd clones
+: 1694560631:1;git clone https://github.com/ryan4yin/nix-darwin-kickstarter.git
+: 1694560658:0;cd nix-darwin-kickstarter
+: 1694560672:0;cd rich-demo
+: 1694563092:0;make deploy
+: 1694563124:0;bat Makefile
+: 1694613278:0;nvim
+: 1694613290:0;which nvim
+: 1694613337:0;z result
+: 1694613373:0;z patches
+: 1694613385:0;la patches
+: 1694613388:0;ls patches
+: 1694613396:0;cd patches
+: 1694613411:0;la sw
+: 1694613438:0;bat activate
+: 1694613457:0;bat activate-user
+: 1694613503:0;bat system
+: 1694613510:0;bat systemConfig
+: 1694613524:0;z user
+: 1694613533:0;la Library
+: 1694613635:0;la darwin
+: 1694617568:0;nix flake rebuild
+: 1694617697:0;nix rebuild .#darwinConfigurations.macbook.system
+: 1694627968:0;which zsd
+: 1694628090:0;brew autoremove exa
+: 1694628109:2;brew remove exa
+: 1694628137:12;brew install nushell
+: 1694628155:119;nu
+: 1694627763:2;sudo rm -rf .bash_profile
+: 1694627776:0;sudo rm -rf .bashrc
+: 1694627791:0;sudo rm -rf .profile
+: 1694627801:1;sudo rm -rf .zshenv
+: 1694627925:0;zi ~
+: 1694627931:0;z ~
+: 1694628385:0;ls .config
+: 1694628424:0;rm -rf .config/fish
+: 1694628459:0;ln -s ~/clones/conf/fish ~/.config
+: 1694628885:68;fish
+: 1694648149:0;bat /etc/zsh/zshrc
+: 1694648161:0;bat /etc/zsh/zshrc.backup-before-nix
+: 1694648185:3;sudo rm -rf /etc/zsh/zshrc
+: 1694648194:0;sudo rm -rf /etc/zsh/zshrc.backup-before-nix
+: 1694638438:1026;v
+: 1694639723:35;v .local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua
+: 1694643022:2;sudo ps
+: 1694648859:0;z /etc
+: 1694648908:0;sudo rm bash.bashrc
+: 1694648914:0;sudo rm bashrc
+: 1694649015:0;bat bash.bashrc.backup-before-nix
+: 1694649085:0;sudo mv /etc/bashrc.backup-before-nix /etc/bashrc
+: 1694649100:0;sudo mv /etc/bash.bashrc.backup-before-nix /etc/bash.bashrc
+: 1694649102:0;bat bashrc.backup-before-nix
+: 1694649146:0;z profile.d
+: 1694649155:0;bat nix.sh
+: 1694649160:0;bat nix.sh.backup-before-nix
+: 1694649189:0;sudo rm nix.sh nix.sh.backup-before-nix
+: 1694649214:0;..
+: 1694649219:11;bat zshrc
+: 1694649239:18;nvim zshrc
+: 1694649261:10;sudo nvim zshrc
+: 1694649289:0;sudo rm zshrc.backup-before-nix zshrc.before-nix-darwin
+: 1694707477:0;diskutil list\
+
+: 1694707762:57;\
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/tag/v0.10.0 | sh -s -- install
+: 1694710741:0;which zsh
+: 1694710744:0;which bash
+: 1694734512:0;cd clones/
+: 1694734523:0;git clone https://github.com/catppuccin/oldtwitter.git
+: 1694710962:0;nix-shell
+: 1694711021:16008;nix-shell -p nix-info --run "nix-info -m" --fallback
+: 1694729336:4;nix-shell -p nix-info --run "nix-info -m"
+: 1694729593:0;cd c
+: 1694729602:0;z clones
+: 1694729610:0;mkdir -p flake
+: 1694729613:0;cd flake
+: 1694729617:0;nix flake init -t github:srid/nixos-flake
+: 1694729647:0;nix flake init -t github:srid/nixos-flake --extra-experimental-features nix-command --extra-experimental-features flake
+: 1694729652:2;nix flake init -t github:srid/nixos-flake --extra-experimental-features nix-command --extra-experimental-features flakes
+: 1694733659:0;nix run .#activate
+: 1694733663:0;nash
+: 1694734586:176;v .config/yabai/yabairc
+: 1694738293:0;nix-channel --remove darwin || true
+: 1694738304:3;rm /Applications/Nix\ Apps
+: 1694738316:2;rm /etc/static
+: 1694738324:0;bat rm /etc/static
+: 1694738347:2;sudo rm /etc/static
+: 1694738395:0;bat Library/LaunchDaemons/org.nixos.nix-daemon.plist
+: 1694738427:0;sudo launchctl remove org.nixos.nix-daemon 2> /dev/null || true\
+
+: 1694738439:0;sudo cp /nix/var/nix/profiles/default/Library/LaunchDaemons/org.nixos.nix-daemon.plist /Library/LaunchDaemons/org.nixos.nix-daemon.plist\
+
+: 1694738449:0;sudo launchctl load -w /Library/LaunchDaemons/org.nixos.nix-daemon.plist
+: 1694778429:5417;nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer\
+./result/bin/darwin-installer
+: 1694788279:1168;nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer\
+
+: 1694798616:0;$ bash <(curl -L https://nixos.org/nix/install) --daemon\
+
+: 1694798646:77;sh <(curl -L https://nixos.org/nix/install) --daemon
+: 1694798734:0;sudo reboot
+: 1694800574:86;/bin/bash
+: 1694800394:0;make
+: 1694800429:30;make darwin
+: 1694800495:0;nix build .#darwinConfigurations.macbook.system --extra-experimental-features 'nix-command flakes'
+: 1694800688:0;z /Applications
+: 1694800774:0;z conf
+: 1694798810:0;z sadnix
+: 1694798823:2018;v flake.nix
+: 1694805012:0;exa
+: 1694804287:845;bash
+: 1694804427:2;sudo launchctl setenv NIX_SSL_CERT_FILE $NIX_SSL_CERT_FILE
+: 1694804441:0;sudo launchctl kickstart -k system/org.nixos.nix-daemon
+: 1695686659:41;brew install zoxide kitty wezterm
+: 1695686770:0;rm -rf .config/kitty
+: 1695686772:0;ln -s ~/clones/conf/kitty ~/.config
+: 1695686815:0;sketchybar --restart-service
+: 1695686828:2;brew services restart sketchybar
+: 1695686935:0;yabai --restart-service
+: 1695687072:2;sudo rm -rf .bash_profile .bashrc .profile .zshenv
+: 1695687088:3;brew install bat fkill
+: 1695687109:9;npm install --global fkill-cli
+: 1695687127:6;brew install bat
+: 1695687184:0;which fzf
+: 1695687191:3;brew install fzf
+: 1695687227:0;bat .bashrc.backup
+: 1695687244:0;mv .bashrc.backup .bashrc
+: 1695687274:0;bat .profile.backup
+: 1695687289:0;mv .profile.backup .profile
+: 1695687314:0;bat .zprofile
+: 1695687398:1;bat .config/zsh/aliases.zsh
+: 1695687441:0;skhd --start-service
+: 1695687476:0;rm -rf .config/starship.toml
+: 1695687495:0;ln -s ~/clones/conf/starship/Winstons_starship.toml ~/.config/starship.toml
+: 1695687514:0;rm -rf .config/wezterm.bak
+: 1695687549:0;ln -s ~/clones/conf/yabai ~/.config
+: 1695687555:0;ln -s ~/clones/conf/skhd ~/.config
+: 1695771541:1;brew remove only-switch
+: 1695771554:0;yabai --restart-service && skhd --restart-service
+: 1695772665:0;ls -a .config
+: 1695772676:5;brew install btop
+: 1695772865:0;ls -a .config/bat
+: 1695772871:0;ls -a .config/bat/themes
+: 1695772890:0;ls -a .config/btop
+: 1695772909:0;ls -a .config/alacritty
+: 1695772920:0;ls -a .config/gh
+: 1695772925:0;ls -a .config/git
+: 1695773530:0;ls -a
+: 1695773768:3;fd
+: 1695773790:1;fd ^nix
+: 1695773867:1;fd '^x.*rc$'
+: 1695773882:1;fd '^x.*rc$' ~
+: 1695773889:0;fd ~ '^x.*rc$' ~
+: 1695773900:0;fd ~/ '^x.*rc$' ~
+: 1695773916:6;fd . ~/ '^x.*rc$' ~
+: 1695774091:0;zi -1
+: 1695774098:21;zi
+: 1695829774:4;brew remove fig
+: 1695829827:1;brew autoremove fig
+: 1695829841:2;brew remove -f fig
+: 1695829857:20;brew install fig
+: 1695830001:8;fig doctor
+: 1695830023:3;fig integrations install input-method
+: 1695773232:109;nvim ~/.config/skhd/skhdrc
+: 1695773351:0;skhd --restart-service
+: 1695833880:0;rmf .config/zsh/zcom/.macbook.48905
+: 1695834244:0;lsa .config/.
+: 1695834247:0;lsa .config
+: 1695834336:0;ls -a .config/
+: 1695834343:0;eza -1 --icons --hyperlink --group-directories-first
+: 1695834518:0;v .config/zsh/aliases.zsh
+: 1695834629:0;eza -a --icons --hyperlink --group-directories-first"\
+\
+
+: 1695834633:0;eza -a --icons --hyperlink --group-directories-first\
+\
+
+: 1695837607:0;ls .config/
+: 1695837718:0;b .config/.DS_Store
+: 1695837869:0;\
+
+: 1695837920:0;rmf .config/zsh/zcom/*
+: 1695838175:0;la
+: 1695838429:0;b .zshrc
+: 1695838489:12;v .config/zsh/exports.zsh
+: 1695838540:0;b .bashrc
+: 1695838670:11;v .zshrc
+: 1695838727:0;exit
+: 1695839475:4;fkill com.alamofire.imagedownloader
+: 1695839497:0;killall alfred
+: 1695839517:196;btop
+: 1695839737:21;fkill
+: 1695840160:2;sudo ln -sf "/Applications/Hyper.app/Contents/Resources/bin/hyper" "/usr/local/bin/hyper"
+: 1695840460:0;hyper i hyper-letters
+: 1695839867:1;brew list
+: 1695839903:2;brew search alamofire
+: 1695839925:0;rmf com.alamofire.imagedownloader
+: 1695839950:0;b .wakatime
+: 1695839967:0;ls .wakatime/
+: 1695839986:0;rmf .wakatime
+: 1695839999:0;ls
+: 1695840023:0;b .zprofile
+: 1695840062:0;rmf .zplug
+: 1695840077:0;b .profile
+: 1695840890:0;rmf /Applications/Hyper.app
+: 1695840892:8;brew update\
+brew install --cask hyper
+: 1695841090:1;hyper i hyper-aura-theme
+: 1695841283:19;v ~/Library/Application Support/Hyper/.hyper.js
+: 1695841348:37;v ~/Library/Application\ Support/Hyper/config.json
+: 1695841432:1;b hyper.js
+: 1695841448:8;nnn
+: 1695841458:129;ranger
+: 1695841803:0;lsa
+: 1695841965:1;hyper i hyperpower
+: 1695841977:0;wow
+: 1695842007:0;rmf .hyper_plugins
+: 1695842011:0;rmf .hyper.js
+: 1695842766:1;npm install --global hypurr
+: 1695842916:0;ls .hyper_plugins/local
+: 1695845711:0;b .hyper_plugins/package.json
+: 1695845306:1;hyper i hyper-rose-pine
+: 1695845417:1;hyper i hypurr
+: 1695846463:64;v .hyper.js
+: 1695943032:2;brew upgrade
+: 1695943045:3;brew update
+: 1695943054:0;x

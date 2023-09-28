@@ -23,8 +23,8 @@ c.adjust_window_size_when_changing_font_size = false
 c.audible_bell = "Disabled"
 c.clean_exit_codes = { 130 }
 c.default_cursor_style = "BlinkingBar"
-c.command_palette_font_size = 13.0
-c.window_frame = { font_size = 13.0 }
+c.command_palette_font_size = 14.0
+c.window_frame = { font_size = 14.0 }
 c.window_background_opacity = 0.95
 
 wezterm.plugin.require("https://github.com/catppuccin/wezterm").apply_to_config(c, {

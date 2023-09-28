@@ -1,6 +1,8 @@
 #Reasign cmd+backspace key to delete forward.
-cmd - backspace : skhd -k "delete" 
-cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~ &> /dev/null
+cmd - backspace : skhd -k "delete"
+# open terminal
+alt + shift - return : open -na wezterm 
+alt - return : open -na kitty
 #Spaces
 # alt - 1 : yabai -m space --focus 1
 # alt - 2 : yabai -m space --focus 2
@@ -59,7 +61,7 @@ alt + cmd - m : yabai -m window --toggle zoom-fullscreen
 # Restart Yabai
 shift + cmd - y : yabai --restart-services
 alt + cmd + shift - q : osascript -e 'tell app "System Events" to log out'
-alt + cmd - r : brew services restart setchybar
+alt + cmd - r : brew services restart sketchybar
 
 cmd - e : open ~/
 
