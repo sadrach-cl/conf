@@ -64,7 +64,6 @@
 : 1694362917:0;nvim ~/clones/dotfiles/.config/nvim/lua/plugins/init.lua
 : 1694362917:0;nvim ~/clones/dotfiles/.config/nvim/lua/mappings.lua
 : 1694362917:0;brew --help
-: 1694362917:0;brew doctor
 : 1694362917:0;brew cask koekeishiya/formulae/yabai
 : 1694362917:0;brew tap koekeishiya/formulae/yabai
 : 1694362917:0;brew services restart yabai
@@ -144,8 +143,6 @@
 : 1694362917:0;brew install fish
 : 1694362917:0;zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
 : 1694362917:0;ls -l
-: 1694362917:0;zap
-: 1694362917:0;zap update all
 : 1694362917:0;ls la
 : 1694362917:0;ls -la
 : 1694362917:0;brew install lsd
@@ -161,7 +158,6 @@
 : 1694362917:0;cd com.alamofire.imagedownloader
 : 1694362917:0;cd ..
 : 1694362917:0;cd ~/
-: 1694362917:0;brew --version
 : 1694362917:0;lazyload nvm -- 'source "$(brew --prefix nvm)/nvm.sh"'
 : 1694362917:0;brew install jq
 : 1694362917:0;n
@@ -266,7 +262,6 @@
 : 1694362917:0;yabai --stop-service
 : 1694362917:0;brew remove yabai skhd
 : 1694362917:0;brew autoremove
-: 1694362917:0;brew cleanup
 : 1694362917:0;brew cleanup luajit
 : 1694362917:0;gping mail.zecher-sadrach.cl
 : 1694362917:0;ssh root@146.190.152.137
@@ -345,7 +340,6 @@
 : 1694362917:0;pscpu
 : 1694362917:0;free
 : 1694362917:0;lazygit
-: 1694362917:0;g
 : 1694362917:0;git stat
 : 1694362917:0;G stat
 : 1694362917:0;clear
@@ -367,12 +361,10 @@
 : 1694362917:0;gh stat
 : 1694362917:0;gh push
 : 1694362917:0;gh pr status
-: 1694362917:0;curl -sfL https://raw.githubusercontent.com/mistakenelf/fm/main/install.sh | sh
 : 1694362917:0;sudo curl -sfL https://raw.githubusercontent.com/mistakenelf/fm/main/install.sh | sh
 : 1694362917:0;brew install fm
 : 1694362917:0;brew install go
 : 1694362917:0;go install github.com/mistakenelf/fm@latest
-: 1694362917:0;fm
 : 1694362917:0;l
 : 1694362917:0;cd servidor/
 : 1694362917:0;commit -m "script install libredte"
@@ -469,7 +461,6 @@
 : 1694362917:0;add yabai/
 : 1694362917:0;add yabai/yabairc
 : 1694362917:0;add .gitignore
-: 1694362917:0;add .
 : 1694362917:0;commit -m "update skhd forward delete"
 : 1694362917:0;cd sadrach/clones
 : 1694362917:0;git clone https://github.com/sadrach-cl/conf.git
@@ -674,7 +665,6 @@ for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Use
 : 1694362235:2;sudo rm -R ~/.config/nvim
 : 1694362370:0;cd clones/conf
 : 1694362387:0;pull
-: 1694362399:0;stat
 : 1694362579:0;git restore nvim/init.lua
 : 1694362607:0;git restore --staged nvim/init.lua
 : 1694362823:25;git clone https://github.com/sadrach-cl/conf.git conf2
@@ -691,7 +681,6 @@ for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Use
 : 1694363609:0;z c 'z#/Users/sadrach/clones'
 : 1694363674:0;git add .
 : 1694363693:0;commit -m "update wezterm 2"
-: 1694363709:2;push
 : 1694363833:2;brew install ripgrep
 : 1694363862:0;z ../winstondots
 : 1694363895:0;rg -i sashimi
@@ -736,7 +725,6 @@ for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Use
 : 1694365775:0;mv .zsh_history ~/.config/zsh/history
 : 1694365815:0;eza -a --icons --hyperlink --group-directories-first .wakatime
 : 1694365922:2;brew list highway karabiner-element
-: 1694390593:0;z clones/conf
 : 1694390619:0;mkdir -p nix-flake
 : 1694390621:0;z nix-flake
 : 1694390634:0;touch flake.nix
@@ -933,7 +921,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1694800429:30;make darwin
 : 1694800495:0;nix build .#darwinConfigurations.macbook.system --extra-experimental-features 'nix-command flakes'
 : 1694800688:0;z /Applications
-: 1694800774:0;z conf
 : 1694798810:0;z sadnix
 : 1694798823:2018;v flake.nix
 : 1694805012:0;exa
@@ -983,7 +970,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1695773900:0;fd ~/ '^x.*rc$' ~
 : 1695773916:6;fd . ~/ '^x.*rc$' ~
 : 1695774091:0;zi -1
-: 1695774098:21;zi
 : 1695829774:4;brew remove fig
 : 1695829827:1;brew autoremove fig
 : 1695829841:2;brew remove -f fig
@@ -991,10 +977,8 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1695830001:8;fig doctor
 : 1695830023:3;fig integrations install input-method
 : 1695773232:109;nvim ~/.config/skhd/skhdrc
-: 1695773351:0;skhd --restart-service
 : 1695833880:0;rmf .config/zsh/zcom/.macbook.48905
 : 1695834244:0;lsa .config/.
-: 1695834247:0;lsa .config
 : 1695834336:0;ls -a .config/
 : 1695834343:0;eza -1 --icons --hyperlink --group-directories-first
 : 1695834518:0;v .config/zsh/aliases.zsh
@@ -1009,11 +993,9 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1695837869:0;\
 
 : 1695837920:0;rmf .config/zsh/zcom/*
-: 1695838175:0;la
 : 1695838429:0;b .zshrc
 : 1695838489:12;v .config/zsh/exports.zsh
 : 1695838540:0;b .bashrc
-: 1695838670:11;v .zshrc
 : 1695838727:0;exit
 : 1695839475:4;fkill com.alamofire.imagedownloader
 : 1695839497:0;killall alfred
@@ -1021,7 +1003,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1695839737:21;fkill
 : 1695840160:2;sudo ln -sf "/Applications/Hyper.app/Contents/Resources/bin/hyper" "/usr/local/bin/hyper"
 : 1695840460:0;hyper i hyper-letters
-: 1695839867:1;brew list
 : 1695839903:2;brew search alamofire
 : 1695839925:0;rmf com.alamofire.imagedownloader
 : 1695839950:0;b .wakatime
@@ -1051,6 +1032,83 @@ brew install --cask hyper
 : 1695845306:1;hyper i hyper-rose-pine
 : 1695845417:1;hyper i hypurr
 : 1695846463:64;v .hyper.js
-: 1695943032:2;brew upgrade
-: 1695943045:3;brew update
-: 1695943054:0;x
+: 1695943468:0;z clones/conf
+: 1695943473:0;add .
+: 1695943826:0;git config --global user.name "Sadrach"
+: 1695943837:0;git config --global user.email sadrachfza@gmail.com
+: 1695943851:0;git config --global core.editor nvim
+: 1695943857:0;commit -m "update zsh & skhd keybinds"
+: 1695943886:0;stat
+: 1695943947:0;git rev-list
+: 1695943961:149;g
+: 1695944116:2;push
+: 1695944326:0;la
+: 1695944344:10;v packages.txt
+: 1695944381:22;v INSTALL.sh
+: 1695944410:0;brew list
+: 1695945081:0;brew list > brew_programs_list.txt
+: 1695945161:0;lsa .config
+: 1695946237:16;v skhd/skhdrc
+: 1695946256:0;skhd --restart-service
+: 1695946452:0;./scripts/bin/bunny
+: 1695946460:0;./scripts/bin/bunnyfetch
+: 1695946468:0;./scripts/bin/colorblocks
+: 1695946476:0;./scripts/bin/colorpanes
+: 1695946486:0;./scripts/bin/owl
+: 1695946492:0;./scripts/bin/pfetch
+: 1695946497:0;./scripts/bin/puccinfetch
+: 1695946512:0;./scripts/bin/meow.sh
+: 1695946768:487;v brew_programs_list.txt
+: 1695947889:36;zap update all
+: 1695944458:1;zi
+: 1695944486:2827;v homebrew.sh
+: 1695947635:308;v .zshrc
+: 1695948048:4;brew cleanup
+: 1695948110:7;brew remove -f fig exa
+: 1695948127:3;brew doctor
+: 1696028920:10;brew update
+: 1696028949:10;brew upgrade
+: 1696031208:0;b INSTALL.sh
+: 1696031229:0;chmod -R +x homebrew.sh
+: 1696032340:4;curl -sfL https://raw.githubusercontent.com/mistakenelf/fm/main/install.sh | sh
+: 1696032454:661;fm
+: 1696033122:1;brew find fm
+: 1696033134:2;brew search fm
+: 1696033164:2;brew search glow
+: 1696033214:6;brew install glow
+: 1696033629:0;bat -h
+: 1696033804:0;echo "glow" | tee -a brew_programs_list.txt >/dev/null
+: 1696034141:0;z
+: 1696034145:0;z conf
+: 1696034160:1;b homebrew.sh
+: 1696034206:0;rmf bat
+: 1696034306:0;rmf ~/.config/bat
+: 1696034329:0;ln -sf ~/clones/conf/bat ~/.config
+: 1696034348:0;rmf ~/.config/btop ~/.config/btop.bak
+: 1696034362:0;ln -sf ~/clones/conf/btop ~/.config
+: 1696034385:0;rmf ~/.config/alacritty
+: 1696034394:0;ln -sf ~/clones/conf/alacritty ~/.config
+: 1696034406:0;rmf ~/.config/fish
+: 1696034414:0;ln -sf ~/clones/conf/fish ~/.config
+: 1696034440:0;b brew_programs_list.txt
+: 1696098913:0;if ! command -v xcode-select &> /dev/null; then\
+ echo "xcode-select no est√ÉÅ instalado. Instalando..."\
+ xcode-select --install\
+else\
+ echo "xcode-select ya est√ÉÅ instalado."\
+fi
+: 1696099409:0;brew --version
+: 1696103162:38;./homebrew.sh
+: 1696103231:0;zap
+: 1696103327:0;lsa ~/.config
+: 1696103360:0;b ~/.config/git/config
+: 1696103383:0;lsa ~/.config/git/config
+: 1696103400:0;lsa ~/.config/git/ignore
+: 1696103435:0;lsa ~/.config/gh/config.yml
+: 1696103442:0;b ~/.config/gh/config.yml
+: 1696103466:0;lsa ~/.config/
+: 1696103488:0;lsa ~/
+: 1696103514:0;b ~/.gitconfig
+: 1696103533:0;rmf ~/.config/git
+: 1696103543:0;x
+: 1695948740:154816;v clones/conf

@@ -1,5 +1,5 @@
 #Reasign cmd+backspace key to delete forward.
-cmd - backspace : skhd -k "delete"
+alt - backspace : skhd -k "delete"
 # open terminal
 alt + shift - return : open -na wezterm 
 alt - return : open -na kitty
