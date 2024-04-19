@@ -1,7 +1,10 @@
 alias b="bat --theme='Catppuccin-macchiato'"
-# DNF Fedora
+# APT Debians/DNF Fedora/Archs
 alias dnfi="sudo dnf install"
 alias dnfu="sudo dnf update"
+alias install="sudo apt install"
+alias update="sudo apt update"
+alias remove="sudo apt remove"
 
 #Nvim
 alias v="nvim"
@@ -10,15 +13,20 @@ alias v="nvim"
 alias find="fd"
 
 # Aliases for common dirs
-alias home="z ~"
+alias home="z ~/"
 
 # Exa codes
 alias la="eza -a --icons --hyperlink --group-directories-first"
 alias ls="eza -l --icons --hyperlink --group-directories-first"
 alias lsa="eza -la --icons --hyperlink --group-directories-first"
+
 # System Aliases
-alias ..="z .."
+alias ..="cd .."
 alias x="exit"
+alias cpp="rsync -ah --progress"
+alias lnsf="ln -sf"
+alias rmf= "sudo rm -R"
+
 
 # Git Aliases
 alias add="git add"
