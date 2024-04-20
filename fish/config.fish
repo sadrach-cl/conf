@@ -3,7 +3,7 @@ if status is-interactive
     starship init fish | source
     set -x VISUAL nvim
     # alias -s v="nvim -i NONE"
-    # alias -s del="yay -R"
+    # alias -s del="yay -R"  
     # alias -s gcom="git commit -m"
     # alias -s gadd="git add ."
     # alias -s gpk="git pull"

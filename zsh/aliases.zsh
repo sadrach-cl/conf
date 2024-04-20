@@ -55,3 +55,5 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 # get top process eating cpu ##
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 
+# Docker 
+alias dcup="docker compose up -d"

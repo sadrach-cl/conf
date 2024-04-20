@@ -132,7 +132,6 @@
 : 1694362917:0;neofetch --help
 : 1694362917:0;neofetch --caca source
 : 1694362917:0;cd dotfiles
-: 1694362917:0;nvim .zshrc
 : 1694362917:0;exa -s
 : 1694362917:0;exa --h
 : 1694362917:0;exa 
@@ -160,7 +159,6 @@
 : 1694362917:0;cd ~/
 : 1694362917:0;lazyload nvm -- 'source "$(brew --prefix nvm)/nvm.sh"'
 : 1694362917:0;brew install jq
-: 1694362917:0;n
 : 1694362917:0;brew install ranger
 : 1694362917:0;brew reinstall neovim
 : 1694362917:0;brew remove neovim
@@ -261,10 +259,8 @@
 
 : 1694362917:0;yabai --stop-service
 : 1694362917:0;brew remove yabai skhd
-: 1694362917:0;brew autoremove
 : 1694362917:0;brew cleanup luajit
 : 1694362917:0;gping mail.zecher-sadrach.cl
-: 1694362917:0;ssh root@146.190.152.137
 : 1694362917:0;gping zecher-sadrach.cl
 : 1694362917:0;gping d2crgj1bx58i40.cloudfront.net.
 : 1694362917:0;cd clones/servidor/node
@@ -330,7 +326,6 @@
 : 1694362917:0;ll -a
 : 1694362917:0;lss
 : 1694362917:0;nvim ~/.config/sketchybar/sketchybarrc
-: 1694362917:0;brew services stop sketchybar
 : 1694362917:0;fig source
 : 1694362917:0;ssh github.com
 : 1694362917:0;fig add .
@@ -342,7 +337,6 @@
 : 1694362917:0;lazygit
 : 1694362917:0;git stat
 : 1694362917:0;G stat
-: 1694362917:0;clear
 : 1694362917:0;gadd
 : 1694362917:0;brew install keka
 : 1694362917:0;gadd .
@@ -374,7 +368,6 @@
 : 1694362917:0;killall Finder
 : 1694362917:0;brew install karabiner
 : 1694362917:0;brew install --cask karabiner-elements
-: 1694362917:0;reboot
 : 1694362917:0;diskutil
 : 1694362917:0;diskutil -l
 : 1694362917:0;diskutil l
@@ -403,8 +396,6 @@
 : 1694362917:0;diskutil apfs resizeContainer disk0s2 0
 : 1694362917:0;gping google.cll
 : 1694362917:0;nvim wipe-linux.sh
-: 1694362917:0;sudo ./wipe-linux.sh
-: 1694362917:0;./wipe-linux.sh
 : 1694362917:0;cat wipe-linux.sh
 : 1694362917:0;brew services start sketchybar
 : 1694362917:0;curl https://alx.sh | sh
@@ -439,7 +430,6 @@
 : 1694362917:0;shasum -a 256 $(which yabai))
 : 1694362917:0;shasum -a 256 $(which yabai)
 : 1694362917:0;sudo nvram boot-args=-arm64e_preview_abi
-: 1694362917:0;skhd --stop-service
 : 1694362917:0;nvim ~/.config/yabai/yabairc
 : 1694362917:0;skhd -o
 : 1694362917:0;commit -m "update skhd delete forward"
@@ -471,7 +461,6 @@
 lrwxr-xr-x 32 sadrach 2 Aug 22:32 ïƒ¤ƒµ yabai -> /Users/sadrach/clones/conf/yabai\
 lrwxr-xr-x 30 sadrach 5 Sep 17:29 ïƒ¤ƒµ zsh -> /Users/sadrach/clones/conf/zsh\
 
-: 1694362917:0;gping google.cl
 : 1694362917:0;lls nixpkgs
 : 1694362917:0;cat nixpkgs/config.nix
 : 1694362917:0;cat nixpkgs/home.nix
@@ -488,7 +477,6 @@ lrwxr-xr-x 30 sadrach 5 Sep 17:29 ïƒ¤ƒµ zsh -> /Users/sadrach/clones/conf/zsh\
 : 1694362917:0;sudo rm -r ~/.config/sketchybar
 : 1694362917:0;ln -s ~/clones/conf/sketchybar ~/.config
 : 1694362917:0;lla ~/.config
-: 1694362917:0;v ~/clones/conf/kitty/kitty.conf
 : 1694362917:0;v ~/.config/nvim/lua/plugins/catppuccin.lua
 : 1694362917:0;v ~/.config/wezterm/wezterm.bak
 : 1694362917:0;wget https://github.com/NixOS/nixpkgs/raw/master/nixos/modules/installer/tools/nix-fallback-paths.nix'
@@ -650,8 +638,6 @@ for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Use
 : 1694362917:0;sudo vim /etc/synthetic.conf
 : 1694362917:0;sudo rm -rf /etc/nix /var/root/.nix-profile /var/root/.nix-defexpr /var/root/.nix-channels ~/.nix-profile ~/.nix-defexpr ~/.nix-channels\
 
-: 1694362917:0;sudo diskutil apfs deleteVolume /nix\
-
 : 1694362917:0;cat .zshrc
 : 1694362917:0;exa .zshrc
 : 1694362917:0;sudo rm -R .zshrc
@@ -668,7 +654,6 @@ for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Use
 : 1694362579:0;git restore nvim/init.lua
 : 1694362607:0;git restore --staged nvim/init.lua
 : 1694362823:25;git clone https://github.com/sadrach-cl/conf.git conf2
-: 1694362901:0;cd conf
 : 1694362915:1;ln -s ~/clones/conf/nvim ~/.config
 : 1694363330:10;brew install eza
 : 1694363376:3;brew install zoxide
@@ -774,7 +759,6 @@ for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Use
 : 1694405435:88;find ~ -name "nix*"
 : 1694405537:0;find /var -name "nix*"
 : 1694405543:1;find /var/ -name "nix*"
-: 1694405575:182;sudo find / -name "nix*"
 : 1694406063:2;sudo rm -rf .setup
 : 1694406068:0;eza -a --icons --hyperlink --group-directories-first .setup
 : 1694406072:0;eza -a --icons --hyperlink --group-directories-first
@@ -857,7 +841,6 @@ for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Use
 : 1694648161:0;bat /etc/zsh/zshrc.backup-before-nix
 : 1694648185:3;sudo rm -rf /etc/zsh/zshrc
 : 1694648194:0;sudo rm -rf /etc/zsh/zshrc.backup-before-nix
-: 1694638438:1026;v
 : 1694639723:35;v .local/share/nvim/lazy/lazy.nvim/lua/lazy/core/handler/keys.lua
 : 1694643022:2;sudo ps
 : 1694648859:0;z /etc
@@ -876,8 +859,6 @@ for u in $(sudo dscl . -list /Users | grep _nixbld); do sudo dscl . -delete /Use
 : 1694649239:18;nvim zshrc
 : 1694649261:10;sudo nvim zshrc
 : 1694649289:0;sudo rm zshrc.backup-before-nix zshrc.before-nix-darwin
-: 1694707477:0;diskutil list\
-
 : 1694707762:57;\
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/tag/v0.10.0 | sh -s -- install
 : 1694710741:0;which zsh
@@ -915,7 +896,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1694798616:0;$ bash <(curl -L https://nixos.org/nix/install) --daemon\
 
 : 1694798646:77;sh <(curl -L https://nixos.org/nix/install) --daemon
-: 1694798734:0;sudo reboot
 : 1694800574:86;/bin/bash
 : 1694800394:0;make
 : 1694800429:30;make darwin
@@ -932,7 +912,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1695686772:0;ln -s ~/clones/conf/kitty ~/.config
 : 1695686815:0;sketchybar --restart-service
 : 1695686828:2;brew services restart sketchybar
-: 1695686935:0;yabai --restart-service
 : 1695687072:2;sudo rm -rf .bash_profile .bashrc .profile .zshenv
 : 1695687088:3;brew install bat fkill
 : 1695687109:9;npm install --global fkill-cli
@@ -945,14 +924,12 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1695687289:0;mv .profile.backup .profile
 : 1695687314:0;bat .zprofile
 : 1695687398:1;bat .config/zsh/aliases.zsh
-: 1695687441:0;skhd --start-service
 : 1695687476:0;rm -rf .config/starship.toml
 : 1695687495:0;ln -s ~/clones/conf/starship/Winstons_starship.toml ~/.config/starship.toml
 : 1695687514:0;rm -rf .config/wezterm.bak
 : 1695687549:0;ln -s ~/clones/conf/yabai ~/.config
 : 1695687555:0;ln -s ~/clones/conf/skhd ~/.config
 : 1695771541:1;brew remove only-switch
-: 1695771554:0;yabai --restart-service && skhd --restart-service
 : 1695772665:0;ls -a .config
 : 1695772676:5;brew install btop
 : 1695772865:0;ls -a .config/bat
@@ -998,8 +975,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1695838540:0;b .bashrc
 : 1695838727:0;exit
 : 1695839475:4;fkill com.alamofire.imagedownloader
-: 1695839497:0;killall alfred
-: 1695839517:196;btop
 : 1695839737:21;fkill
 : 1695840160:2;sudo ln -sf "/Applications/Hyper.app/Contents/Resources/bin/hyper" "/usr/local/bin/hyper"
 : 1695840460:0;hyper i hyper-letters
@@ -1008,7 +983,6 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix/
 : 1695839950:0;b .wakatime
 : 1695839967:0;ls .wakatime/
 : 1695839986:0;rmf .wakatime
-: 1695839999:0;ls
 : 1695840023:0;b .zprofile
 : 1695840062:0;rmf .zplug
 : 1695840077:0;b .profile
@@ -1019,9 +993,6 @@ brew install --cask hyper
 : 1695841283:19;v ~/Library/Application Support/Hyper/.hyper.js
 : 1695841348:37;v ~/Library/Application\ Support/Hyper/config.json
 : 1695841432:1;b hyper.js
-: 1695841448:8;nnn
-: 1695841458:129;ranger
-: 1695841803:0;lsa
 : 1695841965:1;hyper i hyperpower
 : 1695841977:0;wow
 : 1695842007:0;rmf .hyper_plugins
@@ -1033,7 +1004,6 @@ brew install --cask hyper
 : 1695845417:1;hyper i hypurr
 : 1695846463:64;v .hyper.js
 : 1695943468:0;z clones/conf
-: 1695943473:0;add .
 : 1695943826:0;git config --global user.name "Sadrach"
 : 1695943837:0;git config --global user.email sadrachfza@gmail.com
 : 1695943851:0;git config --global core.editor nvim
@@ -1041,15 +1011,12 @@ brew install --cask hyper
 : 1695943886:0;stat
 : 1695943947:0;git rev-list
 : 1695943961:149;g
-: 1695944116:2;push
-: 1695944326:0;la
 : 1695944344:10;v packages.txt
 : 1695944381:22;v INSTALL.sh
 : 1695944410:0;brew list
 : 1695945081:0;brew list > brew_programs_list.txt
 : 1695945161:0;lsa .config
 : 1695946237:16;v skhd/skhdrc
-: 1695946256:0;skhd --restart-service
 : 1695946452:0;./scripts/bin/bunny
 : 1695946460:0;./scripts/bin/bunnyfetch
 : 1695946468:0;./scripts/bin/colorblocks
@@ -1066,20 +1033,15 @@ brew install --cask hyper
 : 1695948048:4;brew cleanup
 : 1695948110:7;brew remove -f fig exa
 : 1695948127:3;brew doctor
-: 1696028920:10;brew update
-: 1696028949:10;brew upgrade
 : 1696031208:0;b INSTALL.sh
 : 1696031229:0;chmod -R +x homebrew.sh
 : 1696032340:4;curl -sfL https://raw.githubusercontent.com/mistakenelf/fm/main/install.sh | sh
-: 1696032454:661;fm
 : 1696033122:1;brew find fm
 : 1696033134:2;brew search fm
 : 1696033164:2;brew search glow
 : 1696033214:6;brew install glow
 : 1696033629:0;bat -h
-: 1696033804:0;echo "glow" | tee -a brew_programs_list.txt >/dev/null
 : 1696034141:0;z
-: 1696034145:0;z conf
 : 1696034160:1;b homebrew.sh
 : 1696034206:0;rmf bat
 : 1696034306:0;rmf ~/.config/bat
@@ -1110,5 +1072,220 @@ fi
 : 1696103488:0;lsa ~/
 : 1696103514:0;b ~/.gitconfig
 : 1696103533:0;rmf ~/.config/git
-: 1696103543:0;x
 : 1695948740:154816;v clones/conf
+: 1696103595:0;cd conf
+: 1696103598:0;z cong
+: 1696103614:0;add .
+: 1696103644:1;commit -m "update script mac install brew"
+: 1696103691:0;commit -m "update script mac install brew and remove nerd font folder"
+: 1696103703:2;push
+: 1696123958:114;fm
+: 1696124380:33;n -a
+: 1696124881:1;lsa .config/nnn
+: 1696124890:0;lsa .config/nnn/plugins
+: 1696125257:2;nnn -de
+: 1696127749:0;n
+: 1696116264:3;v kitty/kitty.conf
+: 1696116280:260;v ~/clones/conf/kitty/kitty.conf
+: 1696116711:5752;v ~/clones/conf/fish/config.fish
+: 1696123039:156;v ~/clones/conf/nvim/init.lua
+: 1696123205:354;v ~/clones/conf/nvim/
+: 1696123569:113;nnn
+: 1696123690:55238;ranger
+: 1696178999:0;sudo diskutil apfs deleteVolume /nix\
+
+: 1696124230:0;export NNN_FIFO=/tmp/nnn.fifo
+: 1696128795:0;v
+: 1696179475:0;b ~/.config/zsh/aliases.zsh
+: 1696546735:40;brew install jandedobbeleer/oh-my-posh/oh-my-posh
+: 1696179172:2;sudo diskutil list
+: 1696179291:0;sudo diskutil apfs deleteVolume /Nix
+: 1696179323:4;sudo diskutil apfs deleteVolume disk4s7
+: 1696179366:0;diskutil list\
+
+: 1696179404:0;find ~ -name '*nix*'
+: 1696179514:0;sudo fd / -name "nix*"
+: 1696179535:0;fd --help
+: 1696179649:0;sudo fd / "nix*"
+: 1696179773:7;sudo fd *nix* /
+: 1696179833:0;sudo fd -e *nix* /
+: 1696179847:0;cd /
+: 1696179852:0;sudo fd -e *nix*
+: 1696179859:0;sudo fd -e *nix
+: 1696179865:6;sudo fd nix
+: 1696179903:7;sudo fd -e nix.
+: 1696179923:6;sudo fd nix.
+: 1696179991:49;sudo find / -name "nix*"
+: 1696180119:0;rmf ~/.local/state/nix
+: 1696180125:0;rmf ~/.local/share/nix
+: 1696180139:0;rmf ~/.cache/nix
+: 1696180141:0;rmf ~/.cache/nix-index
+: 1696180253:0;ls /etc/profile
+: 1696180274:0;b /etc/profile.d/nix.sh
+: 1696180308:2;sudo rmf /etc/profile.d
+: 1696180321:0;ls /etc/profile.d
+: 1696180331:0;ls /etc/profile.d/nix.sh
+: 1696180340:0;rmf /etc/profile.d/nix.sh
+: 1696180370:0;sudo rm /etc/profile.d/nix.sh
+: 1696180386:0;b /etc/profile
+: 1696180435:0;sudo rm -f /var/root/.cache/nix
+: 1696180448:0;sudo rm -r /var/root/.cache/nix
+: 1696180501:0;lsa /private/var/root/
+: 1696180531:0;sudo rm -r /private/var/root/result
+: 1696180552:0;lsa /private/var/root/.config
+: 1696180561:0;lsa /private/var/root/.config/iterm2
+: 1696180578:0;lsa /private/var/root/.config/kitty
+: 1696180597:0;lsa /private/var/root/.cache
+: 1696180643:0;lsa /private/etc/
+: 1696180671:0;b /private/etc/static
+: 1696180684:0;b /private/etc/skhdrc
+: 1696180726:0;b /etc/static
+: 1696180744:0;sudo rm -r /private/etc/skhdrc
+: 1696180751:0;sudo rm -r /private/etc/static
+: 1696180763:0;sudo rm -r /private/etc/zshenv
+: 1696180820:0;lsa /private/etc/profile
+: 1696180829:0;lsa /private/etc/profile.d
+: 1696180850:0;lsa /private/etc/profiles
+: 1696180855:0;lsa /private/etc/profiles/per-user
+: 1696180986:0;sudo rm -r /private/etc/profiles/per-user/sadrach
+: 1696181040:0;lsa /etc
+: 1696181058:0;lsa /etc/profiles
+: 1696181066:0;lsa /etc/profiles/per-user
+: 1696181081:0;lsa /var
+: 1696181090:0;lsa /var/root
+: 1696546979:7;v ~/clones/conf/homebrew.sh
+: 1696547222:0;la
+: 1696548110:6;v ~/clones/conf/.zshrc
+: 1696548119:0;exec zsh
+: 1696550120:0;brew remove jandedobbeleer/oh-my-posh/oh-my-posh
+: 1696550409:0;sw_vers
+: 1696550476:0;uname
+: 1696548137:0;z conf
+: 1696549961:24;brew install --cask warp
+: 1696695038:0;yabai --restart-service && skhd --restart-service
+: 1696695124:22;v ~/clones/conf/yabai/yabairc
+: 1696550508:0;warp
+: 1696694613:1;brew stop sketchybar
+: 1696694621:3;brew services stop sketchybar
+: 1696694634:1;brew services disable sketchybar
+: 1696807673:10;brew install duf
+: 1696807691:0;duf
+: 1696867274:0;echo "glow" | tee -a brew_programs_list.txt >/dev/null
+: 1696867280:0;echo "glow"
+: 1696867285:0;echo "\x1b[30;41;3mglow"
+: 1696867297:0;echo "\x1b[30;41;3m glow"
+: 1696892697:13;brew install micro
+: 1696892761:46;micro clones/conf/.zshrc
+: 1697480273:26;ping google.cl
+: 1697902319:0;killall Reeder
+: 1697899987:0;ls Downloads/Adguard_2.12.0.1385_Torrentmac.ne'/Volumes/Adguard 2.12.0.1385 [MacKed]/æƒ»´å¤ƒºåºƒ´çƒ´¨.webloc't
+: 1697900006:0;ls Downloads/Adguard_2.12.0.1385_Torrentmac.ne'/Volumes/Adguard 2.12.0.1385 [MacKed]/
+: 1697900018:0;ls /Volumes/Adguard\ 2.12.0.1385\ \[MacKed\]
+: 1697900045:0;z /Volumes/Adguard\ 2.12.0.1385\ \[MacKed\]
+: 1697900064:67;b å·²æƒ­ƒ¿åƒ½ƒ¯ä¿®å¤ƒ­
+: 1697900139:0;b åºƒ´çƒ´¨ç¨ƒ«åºƒ¯
+: 1697904287:11;sudo nvim /etc/hosts
+: 1697938174:13;gping google.cl
+: 1697988353:0;tccutil reset All io. sipapp . Sip -paddle\
+
+: 1698097517:0;ls /Users/sadrach/Library/Application\ Support/Firefox/Profiles
+: 1698097538:0;cd /Users/sadrach/Library/Application\ Support/Firefox/Profiles
+: 1698097862:0;z c
+: 1698097872:0;z clon
+: 1698097886:2;git clone https://github.com/andreasgrafen/cascade.git
+: 1698098696:2;git clone https://github.com/p3nguin-kun/penguinFox.git
+: 1698504899:18;v insert_dylib
+: 1698504948:0;z Downloads/ParallelsDesktop-18.3.2-53621/InjectLib_Crack
+: 1698504970:37;v tool/insert_dylib
+: 1698968434:324002;ssh root@146.190.152.137
+: 1698968751:8;ping mail.zecher-sadrach.cl
+: 1698968765:8;ping zecher-sadrach.cl
+: 1703436022:1;brew autoremove lulu
+: 1703436083:2;brew autoremove
+: 1703436096:1;brew remove lulu
+: 1708560336:0;reboot
+: 1710638241:0;bat cache --buil
+: 1710638243:1;bat cache --build
+: 1710638250:10;bat wipe-linux.sh
+: 1710638267:20;./wipe-linux.sh
+: 1710638298:3;sudo ./wipe-linux.sh
+: 1711554334:0;skhd --help
+: 1711554342:0;skhd -h
+: 1711554453:54;bat ~/.config/skhd/skhdrc
+: 1711554525:1;brew services start sketchybar hd
+: 1711554531:1;brew services start skhd
+: 1711554542:0;skhd
+: 1711554551:1;q
+: 1711573461:2715;nvim .zshrc
+: 1711555610:0;skhd --install-service
+: 1711569412:76;sudo nano /etc/hosts
+: 1711570618:0;cd ~/.ssh
+: 1711570621:0;ls
+: 1711570634:0;bat known_hosts
+: 1711570649:17;nvim known_hosts
+: 1712620880:10;brew update
+: 1712620911:385;brew upgrade
+: 1712621311:2;sudo reboot
+: 1712621818:0;lsa .config/
+: 1712621830:0;lsa .config/skhd
+: 1712621854:159;bat .config/skhd/skhdrc
+: 1712625025:0;yabai --restart-service
+: 1712627698:0;skhd --stop-service
+: 1712627701:0;skhd --start-service
+: 1712627765:0;skhd --restart-service
+: 1712891302:99;sudo vim /etc/hosts
+: 1712891807:0;[200~nmap localhost -p 4000
+: 1712948973:2;ping 192.168.1.255
+: 1712948980:6;ping 192.168.1.94
+: 1712949006:0;ssh sadrach@192.168.1.255
+: 1712952057:0;ifconfig -h
+: 1712952115:0;ipconfig --help
+: 1712952144:0;ipconfig ls
+: 1712952207:0;ipconfig getifaddr en1
+: 1712952292:0;curl ifconfig.me
+: 1712981003:0;ifconfig
+: 1712981108:0;route -n get default
+: 1713141591:1;brew cask install java
+: 1713141599:183;brew install java
+: 1713141956:0;z Downloads/Point.Planck.FileBot.v4.9.5.MacOS.x64.Incl.KeyMaker.and.Patch-DVT
+: 1713141971:2;sudo ./dvt-FileBot-KeyMaker.jar
+: 1713141997:0;chmod 777 dvt-FileBot-KeyMaker.jar
+: 1713142007:0;lsa
+: 1713142013:0;./dvt-FileBot-KeyMaker.jar
+: 1713142262:0;java -jar dvt-FileBot-KeyMaker.jar
+: 1713142324:0;echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+: 1713142704:198;java -jar dvt-FileBot-KeyMaker-1.jar
+: 1713230232:0;clear
+: 1713235362:8;ssh sadrach@192.168.1.130
+: 1713235496:3;ssh sadrach@192.168.1.94
+: 1713230341:2476;ssh sadrach@192.168.1.150
+: 1713231277:3;ping 192.168.1.130
+: 1713231289:0;ping -c 192.168.1.150
+: 1713231387:5;ping -c 5 192.168.1.150
+: 1713236640:5;ssh sadrach@192.168.1.84
+: 1713403875:4;ping -c 5 google.cl
+: 1713493321:0;traceroute 192.168.1.91
+: 1713493339:7;traceroute google.cl
+: 1713493600:0;ipconfig route show
+: 1713487782:4;ping -c 5 192.168.1.87
+: 1713487789:2;ping -c 5 192.168.1.91
+: 1713487793:2;ping -c 5 192.168.1.92
+: 1713487798:4;ping -c 5 192.168.1.93
+: 1713493300:709;ssh sadrach@192.168.1.91
+: 1713494012:178;ssh sadrach@192.168.1.92
+: 1713558791:3419;ssh sadrach@192.168.1.93
+: 1713494850:52;ssh sadrach@192.168.1.87
+: 1713496050:0;bat /Volumes/NO\ NAME/System/Library/CoreServices/boot.efi
+: 1713499553:2;sudo ln -sf ~/clones/conf/starship/Winstons_starship.toml ~/.config/starship.toml
+: 1713499585:0;killall alfred
+: 1713499611:26;btop
+: 1713501458:0;z Downloads
+: 1713501498:0;wget --help
+: 1713501600:0;wget --show-progress 'https://download.parallels.com/desktop/v19/19.3.0-54924/ParallelsDesktop-19.3.0-54924.dmg\
+'
+: 1713503692:0;ipconfig
+: 1713503718:0;ipconfig --he
+: 1713503743:0;ipconfig getifaddr en0
+: 1713503751:0;ipconfig getifaddr
+: 1713562222:2;sudo rm ~/.ssh/known_hosts
+: 1713564829:0;x

@@ -1,6 +1,8 @@
 # Initialise Starship Prompt
 eval "$(starship init zsh)"
-
+# Initialise Oh my Posh
+# eval "$(oh-my-posh init zsh)"
+# eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/tokyonight_storm.omp.json)"
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zsh-users/zsh-autosuggestions"
@@ -27,3 +29,4 @@ compinit
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
 plug "$HOME/.config/zsh/sketchybar.zsh"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

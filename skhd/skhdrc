@@ -4,11 +4,11 @@ alt - backspace : skhd -k "delete"
 alt + shift - return : open -na wezterm 
 alt - return : open -na kitty
 #Spaces
-# alt - 1 : yabai -m space --focus 1
-# alt - 2 : yabai -m space --focus 2
-# alt - 3 : yabai -m space --focus 3
-# alt - 4 : yabai -m space --focus 4
-# alt - 5 : yabai -m space --focus 5
+#alt - 1 : yabai -m space --focus 1
+#alt - 2 : yabai -m space --focus 2
+#alt - 3 : yabai -m space --focus 3
+#alt - 4 : yabai -m space --focus 4
+#alt - 5 : yabai -m space --focus 5
 # change focus
 alt - h : yabai -m window --focus west
 alt - j : yabai -m window --focus south
@@ -43,13 +43,13 @@ alt + cmd - k : yabai -m window south --resize top:0:-80 2> /dev/null || yabai -
 alt + cmd - l : yabai -m window east --resize left:80:0 2> /dev/null || yabai -m window --resize left:80:0
 
 # Move windows app to space 
-shift + cmd - 1 : yabai -m window --space 1; yabai -m space --focus 1
-shift + cmd - 2 : yabai -m window --space 2; yabai -m space --focus 2
-shift + cmd - 3 : yabai -m window --space 3; yabai -m space --focus 3
-shift + cmd - 4 : yabai -m window --space 4; yabai -m space --focus 4
-shift + cmd - 5 : yabai -m window --space 5; yabai -m space --focus 5
-shift + cmd - 6 : yabai -m window --space 6; yabai -m space --focus 6
-shift + cmd - 7 : yabai -m window --space 7; yabai -m space --focus 7
+shift + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
+shift + alt - 2 : yabai -m window --space 2; yabai -m space --focus 2
+shift + alt - 3 : yabai -m window --space 3; yabai -m space --focus 3
+shift + alt - 4 : yabai -m window --space 4; yabai -m space --focus 4
+shift + alt - 5 : yabai -m window --space 5; yabai -m space --focus 5
+shift + alt - 6 : yabai -m window --space 6; yabai -m space --focus 6
+shift + alt - 7 : yabai -m window --space 7; yabai -m space --focus 7
 
 # float / unfloat window and center on screen
 # alt + cmd - f : yabai -m window --toggle float
