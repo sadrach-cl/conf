@@ -1160,7 +1160,6 @@ fi
 : 1696550120:0;brew remove jandedobbeleer/oh-my-posh/oh-my-posh
 : 1696550409:0;sw_vers
 : 1696550476:0;uname
-: 1696548137:0;z conf
 : 1696549961:24;brew install --cask warp
 : 1696695038:0;yabai --restart-service && skhd --restart-service
 : 1696695124:22;v ~/clones/conf/yabai/yabairc
@@ -1250,13 +1249,11 @@ fi
 : 1713141956:0;z Downloads/Point.Planck.FileBot.v4.9.5.MacOS.x64.Incl.KeyMaker.and.Patch-DVT
 : 1713141971:2;sudo ./dvt-FileBot-KeyMaker.jar
 : 1713141997:0;chmod 777 dvt-FileBot-KeyMaker.jar
-: 1713142007:0;lsa
 : 1713142013:0;./dvt-FileBot-KeyMaker.jar
 : 1713142262:0;java -jar dvt-FileBot-KeyMaker.jar
 : 1713142324:0;echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 : 1713142704:198;java -jar dvt-FileBot-KeyMaker-1.jar
 : 1713230232:0;clear
-: 1713235362:8;ssh sadrach@192.168.1.130
 : 1713235496:3;ssh sadrach@192.168.1.94
 : 1713230341:2476;ssh sadrach@192.168.1.150
 : 1713231277:3;ping 192.168.1.130
@@ -1287,5 +1284,11 @@ fi
 : 1713503718:0;ipconfig --he
 : 1713503743:0;ipconfig getifaddr en0
 : 1713503751:0;ipconfig getifaddr
-: 1713562222:2;sudo rm ~/.ssh/known_hosts
-: 1713564829:0;x
+: 1714105767:2;sudo rm ~/.ssh/known_hosts
+: 1714109117:0;ls conf
+: 1714109125:0;z conf
+: 1714109128:0;lsa
+: 1714109160:0;ls zsh/zcom
+: 1714109177:0;lsa zsh
+: 1714109337:466;ssh sadrach@192.168.1.130
+: 1714109806:0;x

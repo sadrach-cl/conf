@@ -56,4 +56,6 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 
 # Docker 
-alias dcup="docker compose up -d"
+alias dcup="sudo docker-compose up -d"
+alias dcdown="sudo docker-compose down"
+
